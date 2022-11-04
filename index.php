@@ -42,7 +42,7 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Offers</a>
-                        </li>
+                        </li>                       
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
@@ -50,15 +50,16 @@
                             </a>
                             <ul class="dropdown-menu bg-secondary">
                                 <li><a class="dropdown-item" href="#"><i class="fa-solid fa-user"></i> My Profile</a>
-                                </li>
-                                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-cart-arrow-down"></i> My
-                                        Cart </a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
                                 <li><a class="dropdown-item" href="#"><i class="fa-solid fa-right-from-bracket"></i> Log
                                         Out</a></li>
                             </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#"><button type="button" class="btn position-relative"> <i class="fa-solid fa-cart-arrow-down"> </i> Cart<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">+9 <span class="visually-hidden">unread messages</span></span>
+                            </button></a>
                         </li>
                     </ul>
 
@@ -67,6 +68,7 @@
         </nav>
     </div>
     <!-- navbar end -->
+
 
     <!-- banner start -->
     <div class="container">
@@ -142,6 +144,49 @@
     </div>
     <!-- banner end -->
 
+
+    <!-- greeting customer start -->
+    <div class="container mt-5">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card">
+                    <i class="fa-solid fa-heart position-absolute top-50 start-50 translate-middle"
+                        style="z-index: 0; opacity: 0.3; font-size: 100px;"></i>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">We Love Our Customer</h5>
+                        <p class="card-text text-muted">This is a longer card with supporting text below as a natural
+                            lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <i class="fa-solid fa-tag position-absolute top-50 start-50 translate-middle"
+                        style="z-index: 0; opacity: 0.3; font-size: 100px; z-index: 0;"></i>
+                    <div class="card-body text-center">
+                        <h5 class="card-title" style="z-index: 1;">Best Price</h5>
+                        <p class="card-text text-muted">This is a longer card with supporting text below as a natural
+                            lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <i class="fa-solid fa-thumbs-up position-absolute top-50 start-50 translate-middle"
+                        style="z-index: 0; opacity: 0.3; font-size: 100px;"></i>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">100% Original</h5>
+                        <p class="card-text text-muted">This is a longer card with supporting text below as a natural
+                            lead-in to
+                            additional content.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- greeting customer end -->
 
 
 

@@ -1,4 +1,7 @@
-h1{
-    color: aliceblue;
-    background-color: black;
+.body{
+    background-color: rgb(231, 231, 69);
+}
+
+.card-body h5{
+    color: rgb(56, 83, 83);
 }
