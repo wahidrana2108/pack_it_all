@@ -7,6 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles/style.css">
     <script src="https://kit.fontawesome.com/fedd93fc11.js" crossorigin="anonymous"></script>
 </head>
@@ -42,7 +49,7 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Offers</a>
-                        </li>                       
+                        </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
@@ -58,8 +65,12 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#"><button type="button" class="btn position-relative"> <i class="fa-solid fa-cart-arrow-down"> </i> Cart<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">+9 <span class="visually-hidden">unread messages</span></span>
-                            </button></a>
+                            <a class="nav-link active" aria-current="page" href="#"><button type="button"
+                                    class="btn position-relative"> <i class="fa-solid fa-cart-arrow-down"> </i>
+                                    Cart<span
+                                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">+9
+                                        <span class="visually-hidden">Added to cart</span></span>
+                                </button></a>
                         </li>
                     </ul>
 
@@ -189,6 +200,171 @@
     <!-- greeting customer end -->
 
 
+    <!-- products with own carosel start -->
+    <div class="container mt-5">
+        <h3 class="text-center">Our Latest Collections</h3>
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <div class="card">
+                    <img src="admin_area/product_images/product-2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bolder text-primary">T-Shirt for Men</h5>
+                        <h6 class="card-text">৳1500</h6>
+                        <button class="btn btn-secondary btn-sm mb-1"><i
+                                class="fa-solid fa-circle-info me-1"></i>Details</button>
+                        <button class="btn btn-success btn-sm"><i class="fa-solid fa-cart-arrow-down me-1"> </i> Add to
+                            Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card">
+                    <img src="admin_area/product_images/product-1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bolder text-primary">T-Shirt for Women</h5>
+                        <h6 class="card-text">৳1200</h6>
+                        <button class="btn btn-secondary btn-sm mb-1"><i
+                                class="fa-solid fa-circle-info me-1"></i>Details</button>
+                        <button class="btn btn-success btn-sm"><i class="fa-solid fa-cart-arrow-down me-1"> </i> Add to
+                            Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card">
+                    <img src="admin_area/product_images/product-2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bolder text-primary">T-Shirt for Men</h5>
+                        <h6 class="card-text">৳1500</h6>
+                        <button class="btn btn-secondary btn-sm mb-1"><i
+                                class="fa-solid fa-circle-info me-1"></i>Details</button>
+                        <button class="btn btn-success btn-sm"><i class="fa-solid fa-cart-arrow-down me-1"> </i> Add to
+                            Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card">
+                    <img src="admin_area/product_images/product-1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bolder text-primary">T-Shirt for Women</h5>
+                        <h6 class="card-text">৳1200</h6>
+                        <button class="btn btn-secondary btn-sm mb-1"><i
+                                class="fa-solid fa-circle-info me-1"></i>Details</button>
+                        <button class="btn btn-success btn-sm"><i class="fa-solid fa-cart-arrow-down me-1"> </i> Add to
+                            Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card">
+                    <img src="admin_area/product_images/product-2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bolder text-primary">T-Shirt for Men</h5>
+                        <h6 class="card-text">৳1500</h6>
+                        <button class="btn btn-secondary btn-sm mb-1"><i
+                                class="fa-solid fa-circle-info me-1"></i>Details</button>
+                        <button class="btn btn-success btn-sm"><i class="fa-solid fa-cart-arrow-down me-1"> </i> Add to
+                            Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card">
+                    <img src="admin_area/product_images/product-1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bolder text-primary">T-Shirt for Women</h5>
+                        <h6 class="card-text">৳1200</h6>
+                        <button class="btn btn-secondary btn-sm mb-1"><i
+                                class="fa-solid fa-circle-info me-1"></i>Details</button>
+                        <button class="btn btn-success btn-sm"><i class="fa-solid fa-cart-arrow-down me-1"> </i> Add to
+                            Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card">
+                    <img src="admin_area/product_images/product-2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bolder text-primary">T-Shirt for Men</h5>
+                        <h6 class="card-text">৳1500</h6>
+                        <button class="btn btn-secondary btn-sm mb-1"><i
+                                class="fa-solid fa-circle-info me-1"></i>Details</button>
+                        <button class="btn btn-success btn-sm"><i class="fa-solid fa-cart-arrow-down me-1"> </i> Add to
+                            Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card">
+                    <img src="admin_area/product_images/product-1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bolder text-primary">T-Shirt for Women</h5>
+                        <h6 class="card-text">৳1200</h6>
+                        <button class="btn btn-secondary btn-sm mb-1"><i
+                                class="fa-solid fa-circle-info me-1"></i>Details</button>
+                        <button class="btn btn-success btn-sm"><i class="fa-solid fa-cart-arrow-down me-1"> </i> Add to
+                            Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card">
+                    <img src="admin_area/product_images/product-2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bolder text-primary">T-Shirt for Men</h5>
+                        <h6 class="card-text">৳1500</h6>
+                        <button class="btn btn-secondary btn-sm mb-1"><i
+                                class="fa-solid fa-circle-info me-1"></i>Details</button>
+                        <button class="btn btn-success btn-sm"><i class="fa-solid fa-cart-arrow-down me-1"> </i> Add to
+                            Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card">
+                    <img src="admin_area/product_images/product-1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bolder text-primary">T-Shirt for Women</h5>
+                        <h6 class="card-text">৳1200</h6>
+                        <button class="btn btn-secondary btn-sm mb-1"><i
+                                class="fa-solid fa-circle-info me-1"></i>Details</button>
+                        <button class="btn btn-success btn-sm"><i class="fa-solid fa-cart-arrow-down me-1"> </i> Add to
+                            Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card">
+                    <img src="admin_area/product_images/product-2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bolder text-primary">T-Shirt for Men</h5>
+                        <h6 class="card-text">৳1500</h6>
+                        <button class="btn btn-secondary btn-sm mb-1"><i
+                                class="fa-solid fa-circle-info me-1"></i>Details</button>
+                        <button class="btn btn-success btn-sm"><i class="fa-solid fa-cart-arrow-down me-1"> </i> Add to
+                            Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card">
+                    <img src="admin_area/product_images/product-1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bolder text-primary">T-Shirt for Women</h5>
+                        <h6 class="card-text">৳1200</h6>
+                        <button class="btn btn-secondary btn-sm mb-1"><i
+                                class="fa-solid fa-circle-info me-1"></i>Details</button>
+                        <button class="btn btn-success btn-sm"><i class="fa-solid fa-cart-arrow-down me-1"> </i> Add to
+                            Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- products with own carosel end -->
+
+
 
 
 
@@ -206,6 +382,43 @@
         integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
         crossorigin="anonymous"></script>
     <script src="fontawesome/js/fontawesome.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- own carosel js start -->
+    <script>
+        var owl = $('.owl-carousel');
+        owl.owlCarousel({
+            loop: true,
+            nav: false,
+            autoplay: true,
+            autoplayTimeout: 2000,
+            margin: 10,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                960: {
+                    items: 4
+                },
+                1200: {
+                    items: 4
+                }
+            }
+        });
+        owl.on('mousewheel', '.owl-stage', function (e) {
+            if (e.deltaY > 0) {
+                owl.trigger('next.owl');
+            } else {
+                owl.trigger('prev.owl');
+            }
+            e.preventDefault();
+        });
+    </script>
+    <!-- own carosel js end -->
 </body>
 
 </html>
