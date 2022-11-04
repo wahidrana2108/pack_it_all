@@ -49,12 +49,15 @@
                                 My Account
                             </a>
                             <ul class="dropdown-menu bg-secondary">
-                                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-user"></i> My Profile</a></li>
-                                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-cart-arrow-down"></i> My Cart </a></li>
+                                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-user"></i> My Profile</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-cart-arrow-down"></i> My
+                                        Cart </a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-right-from-bracket"></i> Log Out</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-right-from-bracket"></i> Log
+                                        Out</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -64,6 +67,90 @@
         </nav>
     </div>
     <!-- navbar end -->
+
+    <!-- banner start -->
+    <div class="container">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <div class="container row  d-flex justify-content-center align-items-center">
+                        <div class="col-6">
+                            <h2>Macbook Pro</h2>
+                            <p class="gray-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                            <button type="button" class="btn btn-dark">BUY NOW →</button>
+
+                        </div>
+                        <div class="col-6">
+                            <img src="images/banner-products/product-1.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <div class="carousel-caption d-none d-md-block">
+
+                    </div>
+                </div>
+
+                <div class="carousel-item" data-bs-interval="2000">
+                    <div class="container row  d-flex justify-content-center align-items-center">
+                        <div class="col-6">
+                            <h2>Macbook Pro</h2>
+                            <p class="gray-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                            <button type="button" class="btn btn-dark">BUY NOW →</button>
+
+                        </div>
+                        <div class="col-6">
+                            <img src="images/banner-products/slider-1.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container row  d-flex justify-content-center align-items-center">
+                        <div class="col-6">
+                            <h2>Macbook Pro</h2>
+                            <p class="gray-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                            <button type="button" class="btn btn-dark">BUY NOW →</button>
+
+                        </div>
+                        <div class="col-6">
+                            <img src="images/banner-products/slider-3.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- banner end -->
+
+
+
+
+
+
+
+
+
+
 
     <!-- scripts -->
     <script src="js/jquery.min.js"></script>
