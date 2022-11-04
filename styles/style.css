@@ -7,3 +7,53 @@ body{
 } */
 
 
+/* Footer */
+#footer{
+    background: rgb(165, 165, 165);
+}
+
+#footer ul{
+    list-style: none;
+    padding-left: 0px;
+}
+
+#footer ul a{
+    text-decoration: none;
+    color: #3a3a3a;
+    padding: 10px 0px;
+}
+
+#footer ul a:hover{
+    color: rgb(211, 211, 211);
+    font-weight: bolder;
+}
+
+#footer p a{
+    text-decoration: none;
+    color: rgb(27, 108, 184);
+}
+
+#footer .social{
+    text-align: left;
+}
+
+#footer .social a{
+    margin-right: 15px;
+    display: inline-block;
+    color: #ffffff;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    line-height: 30px;
+    font-size: 15px;
+    text-align: center;
+    vertical-align: bottom;
+    background: #555555;
+}
+
+#footer .social a:hover{
+    color: white;
+    background-color: #292929;
+}
+
+
