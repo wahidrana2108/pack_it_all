@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Pack It All</title>
-    <link rel="icon" type="image/x-icon" href="images/fb_icon.png">
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
     <link rel="stylesheet" href="styles/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
         integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
@@ -26,7 +26,7 @@
         <h6 class="bg-secondary font-weight-bolder text-center" style="color: white;">Winter sale 50% Off</h6>
         <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="images/logo.jpeg" style="height: 50px;" alt=""></a>
+                <a class="navbar-brand" href="#"><img src="images/logo.png" style="height: 50px;" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -43,27 +43,10 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Register</a>
+                            <a class="nav-link active" aria-current="page" href="#">Shop</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Log In</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Offers</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                My Account
-                            </a>
-                            <ul class="dropdown-menu bg-secondary">
-                                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-user"></i> My Profile</a>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-right-from-bracket"></i> Log
-                                        Out</a></li>
-                            </ul>
+                            <a class="nav-link active" aria-current="page" href="#">My Account</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#"><button type="button"
@@ -72,6 +55,9 @@
                                         class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">+9
                                         <span class="visually-hidden">Added to cart</span></span>
                                 </button></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Contact Us</a>
                         </li>
                     </ul>
 
