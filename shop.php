@@ -57,7 +57,7 @@
         <h6 class="bg-secondary font-weight-bolder text-center" style="color: white;">Winter sale 50% Off</h6>
         <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="images/logo.png" style="height: 50px;" alt=""></a>
+                <a class="navbar-brand" href="#"><img src="images/logo.png" style="height: 80px;" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -126,175 +126,187 @@
                     <?php
                         include("includes/sidebar.php");
                     ?>
-    
+
                 </div>
-    
+
                 <div class="col-md-10">
                     <h1>Shop</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem id expedita </p>
 
                     <div class="container mt-5">
-        <h3 class="text-center">Our Latest Collections</h3>
-        <div class="owl-carousel owl-theme">
-            <div class="item">
-                <div class="card">
-                    <img src="admin_area/product_images/product-2.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title fw-bolder text-primary">T-Shirt for Men</h5>
-                        <h6 class="card-text">৳1500</h6>
-                        <button class="btn btn-secondary btn-sm mb-1"><i
-                                class="fa-solid fa-circle-info me-1"></i>Details</button>
-                        <button class="btn btn-success btn-sm"><i class="fa-solid fa-cart-arrow-down me-1"> </i> Add to
-                            Cart</button>
+                        <h3 class="text-center">Our Latest Collections</h3>
+                        <div class="owl-carousel owl-theme">
+                            <div class="item">
+                                <div class="card">
+                                    <img src="admin_area/product_images/product-2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bolder text-primary">T-Shirt for Men</h5>
+                                        <h6 class="card-text">৳1500</h6>
+                                        <button class="btn btn-secondary btn-sm mb-1"><i
+                                                class="fa-solid fa-circle-info me-1"></i>Details</button>
+                                        <button class="btn btn-success btn-sm"><i
+                                                class="fa-solid fa-cart-arrow-down me-1"> </i> Add to
+                                            Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="card">
+                                    <img src="admin_area/product_images/product-1.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bolder text-primary">T-Shirt for Women</h5>
+                                        <h6 class="card-text">৳1200</h6>
+                                        <button class="btn btn-secondary btn-sm mb-1"><i
+                                                class="fa-solid fa-circle-info me-1"></i>Details</button>
+                                        <button class="btn btn-success btn-sm"><i
+                                                class="fa-solid fa-cart-arrow-down me-1"> </i> Add to
+                                            Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="card">
+                                    <img src="admin_area/product_images/product-2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bolder text-primary">T-Shirt for Men</h5>
+                                        <h6 class="card-text">৳1500</h6>
+                                        <button class="btn btn-secondary btn-sm mb-1"><i
+                                                class="fa-solid fa-circle-info me-1"></i>Details</button>
+                                        <button class="btn btn-success btn-sm"><i
+                                                class="fa-solid fa-cart-arrow-down me-1"> </i> Add to
+                                            Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="card">
+                                    <img src="admin_area/product_images/product-1.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bolder text-primary">T-Shirt for Women</h5>
+                                        <h6 class="card-text">৳1200</h6>
+                                        <button class="btn btn-secondary btn-sm mb-1"><i
+                                                class="fa-solid fa-circle-info me-1"></i>Details</button>
+                                        <button class="btn btn-success btn-sm"><i
+                                                class="fa-solid fa-cart-arrow-down me-1"> </i> Add to
+                                            Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="card">
+                                    <img src="admin_area/product_images/product-2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bolder text-primary">T-Shirt for Men</h5>
+                                        <h6 class="card-text">৳1500</h6>
+                                        <button class="btn btn-secondary btn-sm mb-1"><i
+                                                class="fa-solid fa-circle-info me-1"></i>Details</button>
+                                        <button class="btn btn-success btn-sm"><i
+                                                class="fa-solid fa-cart-arrow-down me-1"> </i> Add to
+                                            Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="card">
+                                    <img src="admin_area/product_images/product-1.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bolder text-primary">T-Shirt for Women</h5>
+                                        <h6 class="card-text">৳1200</h6>
+                                        <button class="btn btn-secondary btn-sm mb-1"><i
+                                                class="fa-solid fa-circle-info me-1"></i>Details</button>
+                                        <button class="btn btn-success btn-sm"><i
+                                                class="fa-solid fa-cart-arrow-down me-1"> </i> Add to
+                                            Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="card">
+                                    <img src="admin_area/product_images/product-2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bolder text-primary">T-Shirt for Men</h5>
+                                        <h6 class="card-text">৳1500</h6>
+                                        <button class="btn btn-secondary btn-sm mb-1"><i
+                                                class="fa-solid fa-circle-info me-1"></i>Details</button>
+                                        <button class="btn btn-success btn-sm"><i
+                                                class="fa-solid fa-cart-arrow-down me-1"> </i> Add to
+                                            Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="card">
+                                    <img src="admin_area/product_images/product-1.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bolder text-primary">T-Shirt for Women</h5>
+                                        <h6 class="card-text">৳1200</h6>
+                                        <button class="btn btn-secondary btn-sm mb-1"><i
+                                                class="fa-solid fa-circle-info me-1"></i>Details</button>
+                                        <button class="btn btn-success btn-sm"><i
+                                                class="fa-solid fa-cart-arrow-down me-1"> </i> Add to
+                                            Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="card">
+                                    <img src="admin_area/product_images/product-2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bolder text-primary">T-Shirt for Men</h5>
+                                        <h6 class="card-text">৳1500</h6>
+                                        <button class="btn btn-secondary btn-sm mb-1"><i
+                                                class="fa-solid fa-circle-info me-1"></i>Details</button>
+                                        <button class="btn btn-success btn-sm"><i
+                                                class="fa-solid fa-cart-arrow-down me-1"> </i> Add to
+                                            Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="card">
+                                    <img src="admin_area/product_images/product-1.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bolder text-primary">T-Shirt for Women</h5>
+                                        <h6 class="card-text">৳1200</h6>
+                                        <button class="btn btn-secondary btn-sm mb-1"><i
+                                                class="fa-solid fa-circle-info me-1"></i>Details</button>
+                                        <button class="btn btn-success btn-sm"><i
+                                                class="fa-solid fa-cart-arrow-down me-1"> </i> Add to
+                                            Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="card">
+                                    <img src="admin_area/product_images/product-2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bolder text-primary">T-Shirt for Men</h5>
+                                        <h6 class="card-text">৳1500</h6>
+                                        <button class="btn btn-secondary btn-sm mb-1"><i
+                                                class="fa-solid fa-circle-info me-1"></i>Details</button>
+                                        <button class="btn btn-success btn-sm"><i
+                                                class="fa-solid fa-cart-arrow-down me-1"> </i> Add to
+                                            Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="card">
+                                    <img src="admin_area/product_images/product-1.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bolder text-primary">T-Shirt for Women</h5>
+                                        <h6 class="card-text">৳1200</h6>
+                                        <button class="btn btn-secondary btn-sm mb-1"><i
+                                                class="fa-solid fa-circle-info me-1"></i>Details</button>
+                                        <button class="btn btn-success btn-sm"><i
+                                                class="fa-solid fa-cart-arrow-down me-1"> </i> Add to
+                                            Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="card">
-                    <img src="admin_area/product_images/product-1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title fw-bolder text-primary">T-Shirt for Women</h5>
-                        <h6 class="card-text">৳1200</h6>
-                        <button class="btn btn-secondary btn-sm mb-1"><i
-                                class="fa-solid fa-circle-info me-1"></i>Details</button>
-                        <button class="btn btn-success btn-sm"><i class="fa-solid fa-cart-arrow-down me-1"> </i> Add to
-                            Cart</button>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="card">
-                    <img src="admin_area/product_images/product-2.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title fw-bolder text-primary">T-Shirt for Men</h5>
-                        <h6 class="card-text">৳1500</h6>
-                        <button class="btn btn-secondary btn-sm mb-1"><i
-                                class="fa-solid fa-circle-info me-1"></i>Details</button>
-                        <button class="btn btn-success btn-sm"><i class="fa-solid fa-cart-arrow-down me-1"> </i> Add to
-                            Cart</button>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="card">
-                    <img src="admin_area/product_images/product-1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title fw-bolder text-primary">T-Shirt for Women</h5>
-                        <h6 class="card-text">৳1200</h6>
-                        <button class="btn btn-secondary btn-sm mb-1"><i
-                                class="fa-solid fa-circle-info me-1"></i>Details</button>
-                        <button class="btn btn-success btn-sm"><i class="fa-solid fa-cart-arrow-down me-1"> </i> Add to
-                            Cart</button>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="card">
-                    <img src="admin_area/product_images/product-2.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title fw-bolder text-primary">T-Shirt for Men</h5>
-                        <h6 class="card-text">৳1500</h6>
-                        <button class="btn btn-secondary btn-sm mb-1"><i
-                                class="fa-solid fa-circle-info me-1"></i>Details</button>
-                        <button class="btn btn-success btn-sm"><i class="fa-solid fa-cart-arrow-down me-1"> </i> Add to
-                            Cart</button>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="card">
-                    <img src="admin_area/product_images/product-1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title fw-bolder text-primary">T-Shirt for Women</h5>
-                        <h6 class="card-text">৳1200</h6>
-                        <button class="btn btn-secondary btn-sm mb-1"><i
-                                class="fa-solid fa-circle-info me-1"></i>Details</button>
-                        <button class="btn btn-success btn-sm"><i class="fa-solid fa-cart-arrow-down me-1"> </i> Add to
-                            Cart</button>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="card">
-                    <img src="admin_area/product_images/product-2.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title fw-bolder text-primary">T-Shirt for Men</h5>
-                        <h6 class="card-text">৳1500</h6>
-                        <button class="btn btn-secondary btn-sm mb-1"><i
-                                class="fa-solid fa-circle-info me-1"></i>Details</button>
-                        <button class="btn btn-success btn-sm"><i class="fa-solid fa-cart-arrow-down me-1"> </i> Add to
-                            Cart</button>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="card">
-                    <img src="admin_area/product_images/product-1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title fw-bolder text-primary">T-Shirt for Women</h5>
-                        <h6 class="card-text">৳1200</h6>
-                        <button class="btn btn-secondary btn-sm mb-1"><i
-                                class="fa-solid fa-circle-info me-1"></i>Details</button>
-                        <button class="btn btn-success btn-sm"><i class="fa-solid fa-cart-arrow-down me-1"> </i> Add to
-                            Cart</button>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="card">
-                    <img src="admin_area/product_images/product-2.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title fw-bolder text-primary">T-Shirt for Men</h5>
-                        <h6 class="card-text">৳1500</h6>
-                        <button class="btn btn-secondary btn-sm mb-1"><i
-                                class="fa-solid fa-circle-info me-1"></i>Details</button>
-                        <button class="btn btn-success btn-sm"><i class="fa-solid fa-cart-arrow-down me-1"> </i> Add to
-                            Cart</button>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="card">
-                    <img src="admin_area/product_images/product-1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title fw-bolder text-primary">T-Shirt for Women</h5>
-                        <h6 class="card-text">৳1200</h6>
-                        <button class="btn btn-secondary btn-sm mb-1"><i
-                                class="fa-solid fa-circle-info me-1"></i>Details</button>
-                        <button class="btn btn-success btn-sm"><i class="fa-solid fa-cart-arrow-down me-1"> </i> Add to
-                            Cart</button>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="card">
-                    <img src="admin_area/product_images/product-2.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title fw-bolder text-primary">T-Shirt for Men</h5>
-                        <h6 class="card-text">৳1500</h6>
-                        <button class="btn btn-secondary btn-sm mb-1"><i
-                                class="fa-solid fa-circle-info me-1"></i>Details</button>
-                        <button class="btn btn-success btn-sm"><i class="fa-solid fa-cart-arrow-down me-1"> </i> Add to
-                            Cart</button>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="card">
-                    <img src="admin_area/product_images/product-1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title fw-bolder text-primary">T-Shirt for Women</h5>
-                        <h6 class="card-text">৳1200</h6>
-                        <button class="btn btn-secondary btn-sm mb-1"><i
-                                class="fa-solid fa-circle-info me-1"></i>Details</button>
-                        <button class="btn btn-success btn-sm"><i class="fa-solid fa-cart-arrow-down me-1"> </i> Add to
-                            Cart</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-                    
+
                 </div>
             </div>
 

@@ -1,6 +1,6 @@
 <div class="card shadow" style="width: 9rem;">
     <div class="card-header">
-        <h5 class="panel-title">Categories</h5>
+        <h6 class="panel-title">Categories</h6>
     </div>
     <nav class="nav flex-column">
         <ul class="navbar-nav">
@@ -22,7 +22,7 @@
 
 <div class="card mt-3 shadow" style="width: 9rem;">
     <div class="card-header">
-        <h5 class="panel-title">Products</h5>
+        <h6 class="panel-title">Products</h6>
     </div>
     <nav class="nav flex-column">
         <ul class="navbar-nav">
