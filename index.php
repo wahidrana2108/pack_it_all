@@ -20,6 +20,37 @@
 </head>
 
 <body>
+    <!-- temp nav start -->
+    <div class="container">
+        <div class="d-flex tempNavBg mb-1">
+            <div class="welcome mt-auto">
+                <h6> <button class="btn btn-success btn-sm justify-content-left mt-2 me-2 ms-3">Welcome</button>4 items
+                    in Your Cart | Total Price ৳300</h6>
+            </div>
+            <nav class="navbar navbar-expand-lg ms-auto">
+                <div class="container-fluid">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Register</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">My Account</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Go To Account</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Login</a>
+                            </li>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+    </div>
+    <!-- temp nav start -->
+
 
     <!-- navbar start -->
     <div class="container">
@@ -33,31 +64,40 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <form class="d-flex mt-3 ms-md-5" role="search">
-                        <input class="form-control me-2 .col-md-4" type="search" placeholder="Search in Pack It All"
-                            aria-label="Search">
-                        <button class="btn btn-outline-primary" type="submit"><i class="fas fa-search"></i></button>
-                    </form>
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item activePage">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Shop</a>
+                            <a class="nav-link active" aria-current="page" href="shop.php">Shop</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">My Account</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#"><button type="button"
-                                    class="btn position-relative"> <i class="fa-solid fa-cart-arrow-down"> </i>
-                                    Cart<span
-                                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">+9
-                                        <span class="visually-hidden">Added to cart</span></span>
-                                </button></a>
+                            <a class="nav-link active" aria-current="page" href="#">Shopping Cart</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Contact Us</a>
+                        </li>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 ms-auto mb-lg-0">
+                        <li class="nav-item">
+                            <form class="d-flex mt-1 ms-md-5" role="search">
+                                <input class="form-control me-2 .col-md-4" type="search"
+                                    placeholder="Search in Pack It All" aria-label="Search">
+                                <button class="btn btn-outline-primary" type="submit"><i
+                                        class="fas fa-search"></i></button>
+                            </form>
+                        </li>
+                        <li class="nav-item ms-2">
+                            <a class="nav-link active mt-1" aria-current="page" href="#">
+                                <button type="button" class="btn position-relative"> <i
+                                        class="fa-solid fa-cart-arrow-down"> </i><span
+                                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">+9
+                                        <span class="visually-hidden">Added to cart</span></span>
+                                </button></a>
                         </li>
                     </ul>
 
@@ -353,9 +393,8 @@
 
 
 
-
     <?php
-    include("includes/footer.php");
+        include("includes/footer.php");
     ?>
 
 
