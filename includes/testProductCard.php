@@ -7,8 +7,7 @@
                 <h6 class="card-text">৳1200</h6>
                 <button class="btn btn-secondary btn-sm mb-1"><i
                         class="fa-solid fa-circle-info me-1"></i>Details</button>
-                <button class="btn btn-success btn-sm"><i class="fa-solid fa-cart-arrow-down me-1"> </i> Add to
-                    Cart</button>
+                <button class="btn btn-success btn-sm"><i class="fa-solid fa-cart-arrow-down me-1"> </i> Add to Cart</button>
             </div>
         </div>
     </div>
@@ -18,10 +17,9 @@
             <div class="card-body">
                 <h5 class="card-title fw-bolder text-primary">T-Shirt for Women</h5>
                 <h6 class="card-text">৳1200</h6>
-                <button class="btn btn-secondary btn-sm mb-1"><i
+                <button a class="btn btn-secondary btn-sm mb-1"><i
                         class="fa-solid fa-circle-info me-1"></i>Details</button>
-                <button class="btn btn-success btn-sm"><i class="fa-solid fa-cart-arrow-down me-1"> </i> Add to
-                    Cart</button>
+                <button class="btn btn-success btn-sm"><i class="fa-solid fa-cart-arrow-down me-1"> </i> Add to Cart</button>
             </div>
         </div>
     </div>
@@ -33,8 +31,7 @@
                 <h6 class="card-text">৳1200</h6>
                 <button class="btn btn-secondary btn-sm mb-1"><i
                         class="fa-solid fa-circle-info me-1"></i>Details</button>
-                <button class="btn btn-success btn-sm"><i class="fa-solid fa-cart-arrow-down me-1"> </i> Add to
-                    Cart</button>
+                <button class="btn btn-success btn-sm"><i class="fa-solid fa-cart-arrow-down me-1"> </i> Add to Cart</button>
             </div>
         </div>
     </div>
@@ -46,8 +43,7 @@
                 <h6 class="card-text">৳1200</h6>
                 <button class="btn btn-secondary btn-sm mb-1"><i
                         class="fa-solid fa-circle-info me-1"></i>Details</button>
-                <button class="btn btn-success btn-sm"><i class="fa-solid fa-cart-arrow-down me-1"> </i> Add to
-                    Cart</button>
+                <button class="btn btn-success btn-sm"><i class="fa-solid fa-cart-arrow-down me-1"> </i> Add to Cart</button>
             </div>
         </div>
     </div>
@@ -59,8 +55,7 @@
                 <h6 class="card-text">৳1200</h6>
                 <button class="btn btn-secondary btn-sm mb-1"><i
                         class="fa-solid fa-circle-info me-1"></i>Details</button>
-                <button class="btn btn-success btn-sm"><i class="fa-solid fa-cart-arrow-down me-1"> </i> Add to
-                    Cart</button>
+                <button class="btn btn-success btn-sm"><i class="fa-solid fa-cart-arrow-down me-1"> </i> Add to Cart</button>
             </div>
         </div>
     </div>
@@ -70,10 +65,9 @@
             <div class="card-body">
                 <h5 class="card-title fw-bolder text-primary">T-Shirt for Women</h5>
                 <h6 class="card-text">৳1200</h6>
-                <button class="btn btn-secondary btn-sm mb-1"><i
-                        class="fa-solid fa-circle-info me-1"></i>Details</button>
-                <button class="btn btn-success btn-sm"><i class="fa-solid fa-cart-arrow-down me-1"> </i> Add to
-                    Cart</button>
+                <a href="details.php" class="btn btn-secondary btn-sm mb-1" role="button"><i
+                    class="fa-solid fa-circle-info me-1"></i>Details</a>
+                <button class="btn btn-success btn-sm"><i class="fa-solid fa-cart-arrow-down me-1"> </i> Add to Cart</button>
             </div>
         </div>
     </div>
