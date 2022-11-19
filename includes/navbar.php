@@ -20,10 +20,10 @@
                         <a class="nav-link active" aria-current="page" href="#">My Account</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Shopping Cart</a>
+                        <a class="nav-link active" aria-current="page" href="cart.php">Shopping Cart</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Contact Us</a>
+                        <a class="nav-link active" aria-current="page" href="contact.php">Contact Us</a>
                     </li>
             </div>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
