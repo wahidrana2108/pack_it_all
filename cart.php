@@ -120,7 +120,7 @@
                   </div>
                   <div class="mt-3">
                     <a href="index.php" class="btn btn-secondary btn-sm mb-1" role="button"><i class="fa-solid fa-chevron-left me-1"></i>Continue Shopping</a>
-                    <div class="btn-group position-absolute end-0">
+                    <div class="btn-group">
                 
                         <a href="cart.php" class="btn btn-primary btn-sm mb-1" role="button"><i class="fa-solid fa-rotate-right me-1"></i>Refresh</a>
                         <a href="mDetails.php" class="btn btn-success btn-sm mb-1" role="button"><i class="fa-solid fa-cart-shopping me-1"></i>Checkout</a>
