@@ -17,7 +17,7 @@
                         <a class="nav-link active" aria-current="page" href="shop.php">Shop</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">My Account</a>
+                        <a class="nav-link active" aria-current="page" href="customer/myAccount.php">My Account</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="cart.php">Shopping Cart</a>
