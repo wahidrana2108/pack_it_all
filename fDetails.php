@@ -96,16 +96,16 @@
                                 </div>
                                 <div class="carousel-inner">
                                     <div class="carousel-item active" data-bs-interval="10000">
-                                        <img src="admin_area/product_images/Product-4.jpg"
-                                            class="d-block w-100" alt="...">
+                                        <img src="admin_area/product_images/Product-4.jpg" class="d-block w-100"
+                                            alt="...">
                                     </div>
                                     <div class="carousel-item" data-bs-interval="2000">
-                                        <img src="admin_area/product_images/Product-4.jpg"
-                                            class="d-block w-100" alt="...">
+                                        <img src="admin_area/product_images/Product-4.jpg" class="d-block w-100"
+                                            alt="...">
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="admin_area/product_images/Product-4.jpg"
-                                            class="d-block w-100" alt="...">
+                                        <img src="admin_area/product_images/Product-4.jpg" class="d-block w-100"
+                                            alt="...">
                                     </div>
                                 </div>
                                 <button class="carousel-control-prev" type="button"
@@ -145,8 +145,8 @@
                                                 <option>Extra large</option>
                                             </select>
                                         </div>
-                                        <button type="submit" class="btn btn-sm btn-success"><i class="fa-solid fa-cart-shopping"></i> Proceed to
-                                            checkout</button>
+                                        <button type="submit" class="btn btn-sm btn-success"><i
+                                                class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
                                     </fieldset>
                                 </form>
 
@@ -158,14 +158,10 @@
                                         temporibus.</p>
                                 </div>
                             </div>
-
                         </div>
                     </div>
-
-                    
-
                 </div>
-                
+
             </div>
             <div class="container">
                 <div class="mLike mt-3">

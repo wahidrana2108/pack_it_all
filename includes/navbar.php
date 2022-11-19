@@ -37,7 +37,7 @@
                         </form>
                     </li>
                     <li class="nav-item ms-2">
-                        <a class="nav-link active mt-1" aria-current="page" href="#">
+                        <a class="nav-link active mt-1" aria-current="page" href="cart.php">
                             <button type="button" class="btn position-relative"> <i
                                     class="fa-solid fa-cart-arrow-down"> </i><span
                                     class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">+9

@@ -70,16 +70,12 @@
                     <li class="breadcrumb-item active" aria-current="page">Shop</li>
                 </ul>
             </div>
-
-
             <div class="d-flex">
                 <div class="col-md-2 me-1">
                     <?php
                         include("includes/sidebar.php");
                     ?>
-
                 </div>
-
                 <div class="col-md-10 ">
                     <h1>Details</h1>
                     <p>Style That Comfort You</p>
@@ -145,11 +141,10 @@
                                                 <option>Extra large</option>
                                             </select>
                                         </div>
-                                        <button type="submit" class="btn btn-sm btn-success"><i class="fa-solid fa-cart-shopping"></i> Proceed to
-                                            checkout</button>
+                                        <button type="submit" class="btn btn-sm btn-success"><i
+                                                class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
                                     </fieldset>
                                 </form>
-
                             </div>
                             <div class="card p-3  mt-3">
                                 <div class="dis">
@@ -158,45 +153,26 @@
                                         temporibus.</p>
                                 </div>
                             </div>
-
                         </div>
                     </div>
-
-                    
-
                 </div>
-                
             </div>
             <div class="container">
                 <div class="mLike mt-3">
                     <div>
                         <h5 class="text-center">Products You May Like <i class="fa-solid fa-right"></i></h5>
                         <?php
-            include("includes/testProduct.php");
-        ?>
+                            include("includes/testProduct.php");
+                        ?>
                     </div>
                 </div>
             </div>
-
-
-
         </div>
     </div>
     <!-- product start -->
-
-
-
-
-
-
     <?php
         include("includes/footer.php");
     ?>
-
-
-
-
-
 
     <!-- scripts -->
     <script src="js/jquery.min.js"></script>
