@@ -21,6 +21,7 @@ include("includes/db.php")
         integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://kit.fontawesome.com/fedd93fc11.js" crossorigin="anonymous"></script>
+    <script src="js/tinymce/js/tinymce/tinymce.min.js"></script>
 </head>
 
 <body>
