@@ -1,3 +1,8 @@
+<?php
+include("includes/db.php")
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -80,7 +85,19 @@
 
                         </div>
                         <div class="col-6">
-                            <img src="images/banner-products/product-1.png" class="d-block w-100" alt="...">
+                            <?php 
+                                $get_slides = "select * from slider LIMIT 0,1";
+                                $run_slides = mysqli_query($con,$get_slides);
+                                while($row_slides=mysqli_fetch_array($run_slides)){
+                                    $slide_name = $row_slides['slide_name'];
+                                    $slide_image = $row_slides['slide_image'];                              
+                                    echo "                               
+                                        <div class='item active'>
+                                            <img src='admin_area/slides_images/$slide_image'  class='d-block w-100'>
+                                        </div>
+                                ";
+                             }
+                            ?>
                         </div>
                     </div>
                     <div class="carousel-caption d-none d-md-block">
@@ -97,7 +114,19 @@
 
                         </div>
                         <div class="col-6">
-                            <img src="images/banner-products/slider-1.png" class="d-block w-100" alt="...">
+                            <?php 
+                                $get_slides = "select * from slider LIMIT 1,1";
+                                $run_slides = mysqli_query($con,$get_slides);
+                                while($row_slides=mysqli_fetch_array($run_slides)){
+                                    $slide_name = $row_slides['slide_name'];
+                                    $slide_image = $row_slides['slide_image'];                              
+                                    echo "                               
+                                        <div class='item active'>
+                                            <img src='admin_area/slides_images/$slide_image'  class='d-block w-100'>
+                                        </div>
+                                ";
+                             }
+                            ?>
                         </div>
                     </div>
                     <div class="carousel-caption d-none d-md-block">
@@ -112,7 +141,19 @@
 
                         </div>
                         <div class="col-6">
-                            <img src="images/banner-products/slider-3.png" class="d-block w-100" alt="...">
+                            <?php 
+                                $get_slides = "select * from slider LIMIT 2,3";
+                                $run_slides = mysqli_query($con,$get_slides);
+                                while($row_slides=mysqli_fetch_array($run_slides)){
+                                    $slide_name = $row_slides['slide_name'];
+                                    $slide_image = $row_slides['slide_image'];                              
+                                    echo "                               
+                                        <div class='item active'>
+                                            <img src='admin_area/slides_images/$slide_image'  class='d-block w-100'>
+                                        </div>
+                                ";
+                             }
+                            ?>
                         </div>
                     </div>
                     <div class="carousel-caption d-none d-md-block">
