@@ -28,7 +28,7 @@
         </div>
         <div class="item">
             <div class="card">
-                <img src="admin_area/product_images/product-2.jpg" class="card-img-top" alt="...">
+                <img src="admin_area/product_images/product-1.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title fw-bolder text-primary">T-Shirt for Men</h5>
                     <h6 class="card-text">৳1500</h6>

@@ -92,3 +92,14 @@ body {
     margin-bottom: 10px;
     background-color: rgb(255, 255, 255);
 }
+
+.remove a{
+    text-decoration: none;
+    color: rgb(92, 92, 92);
+}
+
+
+.removeBtn a{
+    color: rgb(255, 255, 255);
+}
+
