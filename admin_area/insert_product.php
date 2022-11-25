@@ -14,6 +14,7 @@ include("includes/db.php")
     <link rel="icon" type="image/x-icon" href="admin_images/logo.png">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/fedd93fc11.js" crossorigin="anonymous"></script>
+    <script src="js/tinymce/js/tinymce/tinymce.min.js"></script>
 </head>
 
 <body>
@@ -116,19 +117,19 @@ include("includes/db.php")
         $product_keyword = $__POST['product_keyword'];
         $product_desc = $__POST['product_desc'];
 
-        $product_img1 = $FILES['product_img1']['name'];
-        $product_img2 = $FILES['product_img2']['name'];
-        $product_img3 = $FILES['product_img3']['name'];
+        $product_img1 = $_FILES['product_img1']['name'];
+        $product_img2 = $_FILES['product_img2']['name'];
+        $product_img3 = $_FILES['product_img3']['name'];
 
-        $temp_name1 = $FILES['product_img1']['temp_name'];
-        $temp_name2 = $FILES['product_img2']['temp_name'];
-        $temp_name3 = $FILES['product_img3']['temp_name'];
+        $temp_name1 = $_FILES['product_img1']['tmp_name'];
+        $temp_name2 = $_FILES['product_img2']['tmp_name'];
+        $temp_name3 = $_FILES['product_img3']['tmp_name'];
 
-        move_uploaded_file(temp_name1,"product_images/$product_img1");
-        move_uploaded_file(temp_name2,"product_images/$product_img2");
-        move_uploaded_file(temp_name3,"product_images/$product_img3");
+        move_uploaded_file($temp_name1,"product_images/$product_img1");
+        move_uploaded_file($temp_name2,"product_images/$product_img2");
+        move_uploaded_file($temp_name3,"product_images/$product_img3");
 
-        $insert_product = "insert into products (cat_id, p_cat_id, date, product_title, product_img1, product_img2, product_img3, product_price, product_keyword, product_desc) values ('$cat','$p_cat_id',NOW(),'$product_title','$product_img1','$product_img2','$product_img3','$product_price','product_keyword','$product_desc')";
+        $insert_product = "insert into products (cat_id, p_cat_id, date, product_title, product_img1, product_img2, product_img3, product_price, product_keyword, product_desc) values ('$cat','$product_cat',NOW(),'$product_title','$product_img1','$product_img2','$product_img3','$product_price','product_keyword','$product_desc')";
 
         $run_product = mysqli_query($con,$insert_product);
 
