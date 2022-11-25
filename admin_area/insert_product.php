@@ -119,8 +119,8 @@ if(isset($_POST['submit'])){
     $product_img3 = $_FILES['product_img3']['name'];
 
     $temp_name1 = $_FILES['product_img1']['tmp_name'];
-    $temp_name1 = $_FILES['product_img2']['tmp_name'];
-    $temp_name1 = $_FILES['product_img3']['tmp_name'];
+    $temp_name2 = $_FILES['product_img2']['tmp_name'];
+    $temp_name3 = $_FILES['product_img3']['tmp_name'];
 
     move_uploaded_file($temp_name1,"product_images/$product_img1");
     move_uploaded_file($temp_name2,"product_images/$product_img2");
@@ -130,7 +130,7 @@ if(isset($_POST['submit'])){
 
     $run_product = mysqli_query($con,$insert_product);
 
-    if(run_product){
+    if($run_product){
         echo "<script>alert('Product has been added Successfully!')</script>";
         echo "<script>window.open('insert_product.php','_self')</script>";
     }
