@@ -1,5 +1,4 @@
 <?php
-
 $db = mysqli_connect("localhost","root","","ecom_store");
 
 function getProduct(){
@@ -47,6 +46,52 @@ function getProduct(){
         ";
     }
 
+}
+
+
+
+
+
+function getPCat(){
+    global $db;
+    
+    $get_p_cats = "select * from products_categories";
+    $run_p_cats = mysqli_query($db,$get_p_cats);
+
+    while($row_p_cats=mysqli_fetch_array($run_p_cats)){
+        $p_cat_id = $row_p_cats['p_cat_id'];
+        $p_cat_title = $row_p_cats['p_cat_title'];
+
+        echo "
+        <li class='nav-item'>
+            <a class='nav-link active ms-2 me-2 mb-2 ps-3' aria-current='page' href='shop.php?p_cat=$p_cat_id'>$p_cat_title</a>
+        </li>
+        ";
+
+    }
+}
+
+
+
+
+
+function getCat(){
+    global $db;
+    
+    $get_cats = "select * from categories";
+    $run_cats = mysqli_query($db,$get_cats);
+
+    while($row_cats=mysqli_fetch_array($run_cats)){
+        $cat_id = $row_cats['cat_id'];
+        $cat_title = $row_cats['cat_title'];
+
+        echo "
+        <li class='nav-item'>
+            <a class='nav-link active ms-2 me-2 mb-2 ps-3' aria-current='page' href='shop.php?p_cat=$cat_id'>$cat_title</a>
+        </li>
+        ";
+
+    }
 }
 
 ?>
