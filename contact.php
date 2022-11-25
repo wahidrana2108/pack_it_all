@@ -1,5 +1,6 @@
 <!-- navbar start -->
 <?php
+    $active='Contact Us';
     include("includes/navbar.php");
 ?>
 <!-- navbar end -->

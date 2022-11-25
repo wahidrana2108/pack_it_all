@@ -1,5 +1,6 @@
 <!-- navbar start -->
 <?php
+    $active='Shop';
     include("includes/navbar.php");
 ?>
 <!-- navbar end -->

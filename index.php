@@ -1,5 +1,6 @@
 <!-- navbar start -->
 <?php
+    $active='Home';
     include("includes/navbar.php");
 ?>
 <!-- navbar end -->
@@ -165,8 +166,8 @@
     <div class="container mt-5">
         <div class="owl-carousel owl-theme">
             <?php
-                    getProduct();
-                ?>
+                getProduct();
+            ?>
         </div>
     </div>
 </div>
