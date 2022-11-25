@@ -13,15 +13,7 @@ include("includes/db.php")
     <title>Insert Product - Admin</title>
     <link rel="icon" type="image/x-icon" href="admin_images/logo.png">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://kit.fontawesome.com/fedd93fc11.js" crossorigin="anonymous"></script>
-    <script src="js/tinymce/js/tinymce/tinymce.min.js"></script>
 </head>
 
 <body>
@@ -33,79 +25,116 @@ include("includes/db.php")
             </ul>
         </div>
 
-        <form>
-            <legend>Disabled fieldset example</legend>
+        <form method="post" enctype="multipart/form-data">
+            <legend>Add Product Details</legend>
             <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="" placeholder="Enter Product Title" required>
+                <input name="product_title" type="text" class="form-control" placeholder="Enter Product Title" required>
                 <label for="">Enter Product Title</label>
             </div>
             <div class="form-floating mb-3">
-                <select class="form-select" id="" aria-label="" required>
+                <select name="cat" class="form-select" id="" aria-label="" required>
                     <option selected disabled>Select Category</option>
-                    <option value="1">Men</option>
-                    <option value="2">Women</option>
-                    <option value="3">Kids</option>
-                    <option value="3">Other</option>
+                    <?php
+                        $get_cat = "select * from categories";
+                        $run_cat = mysqli_query($con,$get_cat);
+
+                        while ($row_cat = mysqli_fetch_array($run_cat)){
+                            $cat_id = $row_p_cats['cat_id'];
+                            $cat_title = $row_cat['cat_title'];
+
+                            echo "
+                                <option value='$cat_id'> $cat_title</option>
+                            ";
+                        }
+                    ?>
                 </select>
-                <label for="">Select Product Category</label>
+                <label for="">Select Category</label>
             </div>
             <div class="form-floating mb-3">
-                <select class="form-select" id="" aria-label="" required>
-                    <option selected disabled>Select Category</option>
-                    <option value="1 select">T-Shirt</option>
-                    <option value="2">Jacket</option>
-                    <option value="3">Coat</option>
-                    <option value="3">Shoe</option>
-                    <option value="3">Accessories</option>
+                <select name="product_cat" class="form-select" aria-label="" required>
+                    <option selected disabled>Select Product Category</option>
+                    <?php
+                        $get_p_cats = "select * from products_categories";
+                        $run_p_cats = mysqli_query($con,$get_p_cats);
+
+                        while ($row_p_cats = mysqli_fetch_array($run_p_cats)){
+                            $p_cat_id = $row_p_cats['p_cat_id'];
+                            $p_cat_title = $row_p_cats['p_cat_title'];
+
+                            echo "
+                                <option value='$p_cat_id'> $p_cat_title</option>
+                            ";
+                        }
+                    ?>
                 </select>
-                <label for="">select Category</label>
+                <label for="">select Product Category</label>
             </div>
-            <div class="form-floating mb-3">
-                <select class="form-select" id="" aria-label="" required>
-                    <option selected disabled>Select Size</option>
-                    <option value="1">Small</option>
-                    <option value="2">Medium</option>
-                    <option value="3">Large</option>
-                    <option value="3">Extra Large</option>
-                </select>
-                <label for="">Select Size</label>
-            </div>
+            
             <div class="mb-3">
                 <label for="" class="form-label">Product Image 1:</label>
-                <input type="file" class="form-control" id="" aria-describedby="" required>
+                <input name="product_img1" type="file" class="form-control" id="" aria-describedby="" required>
             </div>
             <div class="mb-3">
                 <label for="" class="form-label">Product Image 2:</label>
-                <input type="file" class="form-control" id="" aria-describedby="" required>
+                <input name="product_img2" type="file" class="form-control" id="" aria-describedby="" required>
             </div>
             <div class="mb-3">
                 <label for="" class="form-label">Product Image 3:</label>
-                <input type="file" class="form-control" id="" aria-describedby="" required>
+                <input name="product_img3" type="file" class="form-control" id="" aria-describedby="" required>
             </div>
             <div class="form-floating mb-3">
-                <input type="number" class="form-control" id="" placeholder="Enter Product Price" required>
+                <input name="product_price" type="number" class="form-control" id="" placeholder="Enter Product Price" required>
                 <label for="">Enter Price</label>
             </div>
             <div class="form-floating mb-3">
-                <textarea class="form-control" placeholder="Leave a comment here" id="" style="height: 100px"
+                <input name="product_keyword" type="text" class="form-control" id="" placeholder="Enter Product Keyword" required>
+                <label for="">Enter Keyword</label>
+            </div>
+            <div class="form-floating mb-3">
+                <textarea name="product_desc" class="form-control" placeholder="Leave a comment here" id="" style="height: 100px"
                     required></textarea>
                 <label for="">Enter Description</label>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <input name="submit" type="button" class="btn btn-primary" value="Submit">
         </form>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
 </body>
 
 </html>
+
+
+
+
+
+
+<?php
+    if(isset($__POST['submit'])){
+        $product_title = $__POST['product_title'];
+        $cat = $__POST['cat'];
+        $product_cat = $__POST['product_cat'];
+        $product_price = $__POST['product_price'];
+        $product_keyword = $__POST['product_keyword'];
+        $product_desc = $__POST['product_desc'];
+
+        $product_img1 = $FILES['product_img1']['name'];
+        $product_img2 = $FILES['product_img2']['name'];
+        $product_img3 = $FILES['product_img3']['name'];
+
+        $temp_name1 = $FILES['product_img1']['temp_name'];
+        $temp_name2 = $FILES['product_img2']['temp_name'];
+        $temp_name3 = $FILES['product_img3']['temp_name'];
+
+        move_uploaded_file(temp_name1,"product_images/$product_img1");
+        move_uploaded_file(temp_name2,"product_images/$product_img2");
+        move_uploaded_file(temp_name3,"product_images/$product_img3");
+
+        $insert_product = "insert into products (cat_id, p_cat_id, date, product_title, product_img1, product_img2, product_img3, product_price, product_keyword, product_desc) values ('$cat','$p_cat_id',NOW(),'$product_title','$product_img1','$product_img2','$product_img3','$product_price','product_keyword','$product_desc')";
+
+        $run_product = mysqli_query($con,$insert_product);
+
+        if($run_product){
+            echo "<script>alert('Product has been added Successfully!')</script>";
+            echo "<script>window.open('insert_product.php', '_self')</script>";
+        }
+    }
+?>
