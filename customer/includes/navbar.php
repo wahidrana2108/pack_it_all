@@ -57,7 +57,7 @@
                         <li class="nav-item <?php if($active=='Shop') echo"activePage"; ?>"><a class="nav-link active" aria-current="page" href="../shop.php">Shop</a></li>
                         <li class="nav-item <?php if($active=='My Account') echo"activePage"; ?>"><a class="nav-link active" aria-current="page" href="../customer/myAccount.php">My Account</a></li>
                         <li class="nav-item <?php if($active=='Shopping Cart') echo"activePage"; ?>"><a class="nav-link active" aria-current="page" href="../cart.php">Shopping Cart</a></li>
-                        <li class="nav-item <?php if($active=='Contact Us') echo"activePage"; ?>"><a class="nav-link active" aria-current="page" href="myAccount.php">Contact Us</a></li>
+                        <li class="nav-item <?php if($active=='Contact Us') echo"activePage"; ?>"><a class="nav-link active" aria-current="page" href="../contact.php">Contact Us</a></li>
                     </ul>
                 </div>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
