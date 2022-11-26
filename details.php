@@ -13,7 +13,9 @@
         <div class="col-md-12">
             <ul class="breadcrumb">
                 <li class="breadcrumb-item"><a href="index.php">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Shop</li>
+                <li class="breadcrumb-item" aria-current="page"><a href="shop.php">Shop</a></li>
+                <li class="breadcrumb-item" aria-current="page"><a href="shop.php?p_cat=<?php echo $p_cat_id; ?>"><?php echo $p_cat_title; ?></a></li>
+                <li class="breadcrumb-item active" aria-current="page"><?php echo $pro_title; ?></li>
             </ul>
         </div>
         <div class="d-flex">
@@ -23,8 +25,6 @@
                     ?>
             </div>
             <div class="col-md-10 ">
-                <h1>Details</h1>
-                <p>Style That Comfort You</p>
                 <div class="row row-cols-1 row-cols-md-2 g-4">
                     <div class="col">
                         <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
@@ -38,15 +38,15 @@
                             </div>
                             <div class="carousel-inner">
                                 <div class="carousel-item active" data-bs-interval="10000">
-                                    <img src="admin_area/product_details_images/Product-3a.jpg" class="d-block w-100"
+                                    <img src="admin_area/product_images/<?php echo $pro_img1; ?>" class="d-block w-100"
                                         alt="...">
                                 </div>
                                 <div class="carousel-item" data-bs-interval="2000">
-                                    <img src="admin_area/product_details_images/Product-3c.jpg" class="d-block w-100"
+                                    <img src="admin_area/product_images/<?php echo $pro_img2; ?>" class="d-block w-100"
                                         alt="...">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="admin_area/product_details_images/Product-3c.jpg" class="d-block w-100"
+                                    <img src="admin_area/product_images/<?php echo $pro_img3; ?>" class="d-block w-100"
                                         alt="...">
                                 </div>
                             </div>
@@ -64,13 +64,15 @@
                     </div>
                     <div class="col">
                         <div class="card p-3">
-                            <form>
+
+                            <?php add_cart(); ?>
+                            <form action="details.php?add_cart=<??php echo $product_id; >" method="post">
                                 <fieldset>
-                                    <legend>Polo Shirt-Men</legend>
+                                    <legend><?php echo $pro_title; ?></legend>
 
                                     <div class="mb-2">
                                         <label for="" class="">Select Quantity</label>
-                                        <select id="" class="form-select">
+                                        <select id="" class="form-select" required>
                                             <option selected>1</option>
                                             <option>2</option>
                                             <option>3</option>
@@ -80,13 +82,15 @@
                                     </div>
                                     <div class="mb-2">
                                         <label for="" class="">Select Size</label>
-                                        <select id="" class="form-select">
-                                            <option selected>Small</option>
+                                        <select name="product_size" id="" class="form-select" required  oninput="setCustomValidity('')" oninvalid="setCustomValidity('Product size must be selected!')">
+                                            <option disabled selected>Select a size</option>
+                                            <option>Small</option>
                                             <option>Meduim</option>
                                             <option>Large</option>
                                             <option>Extra large</option>
                                         </select>
                                     </div>
+                                    <div class='fw-bolder text-success mb-1'>৳ <?php echo $pro_price; ?></div>
                                     <button type="submit" class="btn btn-sm btn-success"><i
                                             class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
                                 </fieldset>
@@ -94,9 +98,8 @@
                         </div>
                         <div class="card p-3  mt-3">
                             <div class="dis">
-                                <h5>Polo Shirt-Men</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam aperiam esse
-                                    temporibus.</p>
+                                <h5><?php echo $pro_title; ?></h5>
+                                <p><?php echo $pro_desc; ?></p>
                             </div>
                         </div>
                     </div>
@@ -107,9 +110,11 @@
             <div class="mLike mt-3">
                 <div>
                     <h5 class="text-center">Products You May Like <i class="fa-solid fa-right"></i></h5>
-                    <?php
-                            include("includes/testProduct.php");
+                    <div class="owl-carousel owl-theme">
+                        <?php
+                            getProduct();
                         ?>
+                    </div>
                 </div>
             </div>
         </div>

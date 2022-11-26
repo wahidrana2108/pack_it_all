@@ -48,6 +48,15 @@
                     ?>
                 </div>
 
+                <div class="row row-cols-1 row-cols-md-3 g-4 mt-2">
+                    <?php 
+                        genderCategory();
+                        productCategory();
+                    ?>
+                </div>
+
+
+                
 
                 <!-- Button Group Start -->
                     <div class='btn-toolbar mt-4 mb-3 d-flex justify-content-center' role='toolbar' aria-label=''>
@@ -57,6 +66,7 @@
                         </div>
                     </div>
                 <!-- Button Group End -->
+                
 
             </div>
         </div>
@@ -66,30 +76,6 @@
 <!-- product end -->
 
 
-
-
-
-
 <?php
     include("includes/footer.php");
 ?>
-
-
-<!-- 
-<?php
-                    $query = "select * from products";
-                    $result = mysqli_query($con,$query);
-                    $total_records = mysqli_num_rows($result);
-                    $total_pages = ceil($total_records / $per_page);
-                        for($i=1; $i<=$total_pages; $i++){
-                            echo "
-                                <div class='btn-toolbar mt-4 mb-3 d-flex justify-content-center' role='toolbar' aria-label=''>
-                                    <div class='btn-group me-2' role='group' aria-label=''>
-                                        <a class='btn btn-secondary' href='shop.php?page=1'>".'First Page'."</a>
-                                        <a class='btn btn-secondary' href='shop.php?page=".$i."'>".$i."</a>
-                                        <a class='btn btn-secondary' href='shop.php?page=$total_pages'>".'Last Page'."</a>
-                                    </div>
-                                </div>
-                            ";
-                            }
-                ?> -->
