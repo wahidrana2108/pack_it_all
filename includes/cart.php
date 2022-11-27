@@ -3,27 +3,46 @@
     <p>You currently added <span class="fw-bolder">5</span> items in cart</p>
     <div class="row">
         <div class="col-sm-6 col-md-9">
-            <table class="table table-striped-columns text-center" id="resize">
+            <table class="table table-striped table-hover text-center">
                 <tr>
                     <th>Product</th>
-                    <th>Quantity</th>
+                    <th>Unit</th>
                     <th>Unit Price</th>
                     <th>Size</th>
+                    <th>Delete</th>
                     <th>Sub-Total</th>
                 </tr>
                 <tr>
-                    <td> <img style="width: 100px;" src="admin_area/product_images/product-1.jpg" alt="...">T-shirt Female</td>
+                    <td> <img style="width: 60px;" src="admin_area/product_images/product-1.jpg" alt="...">T-shirt Female</td>
                     <td><h6>3</h6></td>
                     <td><h6>৳1500</h6></td>
                     <td><h6>Large</h6></td>
+                    <td><input class="form-check-input" type="checkbox" value="" id="defaultCheck1"></td>
                     <td><h6>৳4500</h6></td>
                 </tr>
                 <tr>
-                    <td> <img style="width: 100px;" src="admin_area/product_images/product-2.jpg" alt="...">T-shirt Female</td>
-                    <td><h6>2</h6></td>
-                    <td><h6>৳2000</h6></td>
+                    <td> <img style="width: 60px;" src="admin_area/product_images/product-1.jpg" alt="...">T-shirt Female</td>
+                    <td><h6>3</h6></td>
+                    <td><h6>৳1500</h6></td>
                     <td><h6>Large</h6></td>
-                    <td><h6>৳4000</h6></td>
+                    <td><input class="form-check-input" type="checkbox" value="" id="defaultCheck1"></td>
+                    <td><h6>৳4500</h6></td>
+                </tr>
+                <tr>
+                    <td> <img style="width: 60px;" src="admin_area/product_images/product-1.jpg" alt="...">T-shirt Female</td>
+                    <td><h6>3</h6></td>
+                    <td><h6>৳1500</h6></td>
+                    <td><h6>Large</h6></td>
+                    <td><input class="form-check-input" type="checkbox" value="" id="defaultCheck1"></td>
+                    <td><h6>৳4500</h6></td>
+                </tr>
+                <tr>
+                    <td> <img style="width: 60px;" src="admin_area/product_images/product-1.jpg" alt="...">T-shirt Female</td>
+                    <td><h6>3</h6></td>
+                    <td><h6>৳1500</h6></td>
+                    <td><h6>Large</h6></td>
+                    <td><input class="form-check-input" type="checkbox" value="" id="defaultCheck1"></td>
+                    <td><h6>৳4500</h6></td>
                 </tr>
             </table>
             
@@ -31,15 +50,16 @@
         <div class="col-sm-6 col-md-3">
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title text-center">Order Summary</h5>
-              <hr>
+              <div style="background-color: rgb(224, 224, 224);">
+                <h5 class="card-title text-center fw-bolder pt-3 pb-3">Order Summary</h5>
+              </div>
               <h6>Order Sub-Total:  <span class="justify-content-right fw-bolder">৳5000</span></h6>
               <hr>
               <h6>Shipping Cost:  <span class="justify-content-right fw-bolder">৳50</span></h6>
               <hr>
               <h6>Tax:  <span class="justify-content-right fw-bolder">৳50</span></h6>
               <hr>
-              <h6 class="fw-bolder">Total:  <span class="justify-content-right fw-bolder">৳5100</span></h6>
+              <h6 class="fw-bolder">Total:  <span class="justify-content-end fw-bolder"> <span class="text-success"><?php totalPrice(); ?></span></span></h6>
             </div>
           </div>
         </div>
