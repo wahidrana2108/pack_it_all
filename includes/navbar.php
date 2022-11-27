@@ -56,7 +56,7 @@
                     </ul>
                 </div>
                 <div class="welcome mt-auto col-sm-12 col-md-7">
-                    <h6 class="text-center"> <a class="btn btn-success btn-sm justify-content-left">Welcome</a> <?php item(); ?> items in Your Cart | Total Price ৳300</h6>
+                    <h6 class="text-center"> <a class="btn btn-success btn-sm justify-content-left">Welcome</a> <?php item(); ?> items in Cart | Total Price <span class="text-success"><?php totalPrice(); ?></span></h6>
                 </div>
                 <h6 class="bg-secondary font-weight-bolder text-center mb-0" style="color: white;">Winter sale 50% Off</h6>
         </div>
