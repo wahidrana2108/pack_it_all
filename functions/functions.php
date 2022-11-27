@@ -3,6 +3,17 @@ $db = mysqli_connect("localhost","root","","ecom_store");
 
 
 
+function getRealIpUser(){
+    switch(true){    
+            case(!empty($_SERVER['HTTP_X_REAL_IP'])) : return $_SERVER['HTTP_X_REAL_IP'];
+            case(!empty($_SERVER['HTTP_CLIENT_IP'])) : return $_SERVER['HTTP_CLIENT_IP'];
+            case(!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) : return $_SERVER['HTTP_X_FORWARDED_FOR'];
+            
+            default : return $_SERVER['REMOTE_ADDR'];
+    }
+}
+
+
 function getProduct(){
     global $db;
     
@@ -50,6 +61,56 @@ function getProduct(){
 
 }
 
+
+
+
+
+function randomProduct(){
+    global $db;
+    
+    $get_products = "select * from products order by rand() LIMIT 0,3";
+    $run_products = mysqli_query($db,$get_products);
+
+    while($row_products=mysqli_fetch_array($run_products)){
+        $pro_id = $row_products['product_id'];
+        $pro_title = $row_products['product_title'];
+        $pro_price = $row_products['product_price'];
+        $pro_img1 = $row_products['product_img1'];
+
+        echo "
+        <div class='item remove'>
+            <div class='card'>
+                <a href='details.php?pro_id=$pro_id'>
+                    <img src='admin_area/product_images/$pro_img1' class='card-img-top'>
+                </a>
+                <div class='card-body'>
+                    <h5 class='card-title fw-bolder text-primary'>
+                        <a href='details.php?pro_id=$pro_id'>
+                            $pro_title
+                        </a>
+                    </h5>
+                    <h6 class='card-text'>
+                        <a href='details.php?pro_id=$pro_id'>
+                            <span class='fw-bolder'>৳</span> $pro_price
+                        </a>
+                    </h6>
+                    <button class='btn btn-secondary btn-sm mb-1 removeBtn'>
+                        <a href='details.php?pro_id=$pro_id'>
+                            <i class='fa-solid fa-circle-info me-1'></i>Details
+                        </a>
+                    </button>
+                    <button class='btn btn-success btn-sm removeBtn'>
+                        <a href='details.php?pro_id=$pro_id'>
+                            <i class='fa-solid fa-cart-arrow-down me-1'> </i> Add to Cart
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </div>
+        ";
+    }
+
+}
 
 
 
@@ -256,34 +317,26 @@ function genderCategory(){
 
 
 
-function getRealIpUser(){
-    switch(true){
-        case(!empty($_SERVER['HTTP_X_REAL_IP'])) : return $_SERVER['HTTP_X_REAL_IP'];
-        case(!empty($_SERVER['HTTP_X_CLIENT_IP'])) : return $_SERVER['HTTP_X_CLIENT_IP'];
-        case(!empty($_SERVER['HTTP_X_FORWARDER_FOR'])) : return $_SERVER['HTTP_X_FORWARDER_FOR'];
-
-        default : return $_SERVER['REMOTE_ADDR'];
-    }
-}
-
-
 
 
 function add_cart(){
     global $db;
+    
     if(isset($_GET['add_cart'])){
-        $ip_add = $getRealIpUser();
-        $p_id = $_GET['add_cart'];
-        $product_qty = $_POST['product_qty'];
+        
+        $ip_add = getRealIpUser();
+     
+        $p_id = $_GET['add_cart'];    
+        $product_qty = $_POST['product_qty'];       
         $product_size = $_POST['product_size'];
-        $check_product = "select * from cart where ip_add='$ip_add' AND p_id='$p_id'";
-        $run_check = mysqli_query($db,$check_product);
+        $check_product = "select * from cart where ip_add='$ip_add' AND p_id='$p_id'";       
+        $run_check = mysqli_query($db,$check_product);      
         if(mysqli_num_rows($run_check)>0){
             echo "<script>alert('This product has already added in cart')</script>";
             echo "<script>window.open('details.php?pro_id=$p_id','_self')</script>";
         }
         else{
-            $query = "insert into cart (p_id,ip_add,qty,size) values ('$p_id','ip_add','$product_qty','$product_size')";
+            $query = "insert into cart (p_id,ip_add,qty,size) values ('$p_id','$ip_add','$product_qty','$product_size')";
             $run_query = mysqli_query($db,$query);
             echo "<script>window.open('details.php?pro_id=$p_id','_self')</script>";
         }
@@ -293,6 +346,15 @@ function add_cart(){
 
 
 
+
+function item(){
+    global $db;
+    $ip_add = getRealIpUser();
+    $get_items = "select * from cart where ip_add='$ip_add'";
+    $run_items = mysqli_query($db,$get_items);
+    $count_items = mysqli_num_rows($run_items);
+    echo $count_items;
+}
 
 
 

@@ -6,7 +6,8 @@
 
 
 <?php 
-    if(isset($_GET['pro_id'])){
+
+    if(isset($_GET['pro_id'])){ 
         $product_id = $_GET['pro_id'];
         $get_product = "select * from products where product_id='$product_id'";
         $run_product = mysqli_query($con,$get_product);
@@ -24,7 +25,6 @@
         $p_cat_title = $row_p_cat['p_cat_title'];
     }
 ?>
-
 
 
 
@@ -47,30 +47,24 @@
 <body>
     <!-- temp nav start -->
     <div class="container">
-        <div class="d-flex tempNavBg mb-1">
-            <div class="welcome mt-auto">
-                <h6> <button class="btn btn-success btn-sm justify-content-left mt-2 me-2 ms-3">Welcome</button>4 items
-                    in Your Cart | Total Price ৳300</h6>
-            </div>
-            <nav class="navbar navbar-expand-lg ms-auto">
-                <div class="container-fluid">
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mb-2 mb-lg-0">
-                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Register</a></li>
-                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">My Account</a></li>
-                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Go To Account</a></li>
-                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Login</a></li>
-                        </ul>
-                    </div>
+        <div class="d-flex tempNavBg row">
+                <div class="col-sm-12 col-md-5" >
+                    <ul class="nav justify-content-center" >
+                        <li class="nav-item"><a class="nav-link" href="#">My Account</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Go To Cart</a></li>
+                        <li class="nav-item"><a class="nav-link ">Login</a></li>
+                    </ul>
                 </div>
-            </nav>
+                <div class="welcome mt-auto col-sm-12 col-md-7">
+                    <h6 class="text-center"> <a class="btn btn-success btn-sm justify-content-left">Welcome</a> <?php item(); ?> items in Your Cart | Total Price ৳300</h6>
+                </div>
+                <h6 class="bg-secondary font-weight-bolder text-center mb-0" style="color: white;">Winter sale 50% Off</h6>
         </div>
 
     </div>
-    <!-- temp nav start -->
+    <!-- temp nav end -->
 
     <div class="container">
-        <h6 class="bg-secondary font-weight-bolder text-center" style="color: white;">Winter sale 50% Off</h6>
         <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"><img src="images/logo.png" style="height: 80px;" alt=""></a>
@@ -94,7 +88,7 @@
                         </li>
                         <li class="nav-item ms-2">
                             <a class="nav-link active mt-1" aria-current="page" href="cart.php">
-                                <button type="button" class="btn position-relative"> <i class="fa-solid fa-cart-arrow-down"> </i><span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">+9 <span class="visually-hidden">Added to cart</span></span></button></a>
+                                <button type="button" class="btn position-relative"> <i class="fa-solid fa-cart-arrow-down"> </i><span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary"> <?php item(); ?> <span class="visually-hidden">Added to cart</span></span></button></a>
                         </li>
                     </ul>
                 </div>

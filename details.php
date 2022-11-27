@@ -13,9 +13,9 @@
         <div class="col-md-12">
             <ul class="breadcrumb">
                 <li class="breadcrumb-item"><a href="index.php">Home</a></li>
-                <li class="breadcrumb-item" aria-current="page"><a href="shop.php">Shop</a></li>
-                <li class="breadcrumb-item" aria-current="page"><a href="shop.php?p_cat=<?php echo $p_cat_id; ?>"><?php echo $p_cat_title; ?></a></li>
-                <li class="breadcrumb-item active" aria-current="page"><?php echo $pro_title; ?></li>
+                <li class="breadcrumb-item"><a href="shop.php">Shop</a></li>
+                <li class="breadcrumb-item"><a href="shop.php?p_cat=<?php echo $p_cat_id; ?>"> <?php echo $p_cat_title; ?> </a></li>
+                <li class="breadcrumb-item"><?php echo $pro_title; ?></li>
             </ul>
         </div>
         <div class="d-flex">
@@ -66,13 +66,13 @@
                         <div class="card p-3">
 
                             <?php add_cart(); ?>
-                            <form action="details.php?add_cart=<??php echo $product_id; >" method="post">
+                            <form action="details.php?add_cart=<?php echo $product_id; ?>" method="post">
                                 <fieldset>
                                     <legend><?php echo $pro_title; ?></legend>
 
                                     <div class="mb-2">
                                         <label for="" class="">Select Quantity</label>
-                                        <select id="" class="form-select" required>
+                                        <select name="product_qty" id="" class="form-select" required>
                                             <option selected>1</option>
                                             <option>2</option>
                                             <option>3</option>
@@ -82,10 +82,9 @@
                                     </div>
                                     <div class="mb-2">
                                         <label for="" class="">Select Size</label>
-                                        <select name="product_size" id="" class="form-select" required  oninput="setCustomValidity('')" oninvalid="setCustomValidity('Product size must be selected!')">
-                                            <option disabled selected>Select a size</option>
-                                            <option>Small</option>
-                                            <option>Meduim</option>
+                                        <select name="product_size" id="" class="form-select" required oninput="setCustomValidity('')" oninvalid="setCustomValidity('Product size must be selected')">
+                                            <option selected>Small</option>
+                                            <option>Medium</option>
                                             <option>Large</option>
                                             <option>Extra large</option>
                                         </select>
@@ -112,7 +111,7 @@
                     <h5 class="text-center">Products You May Like <i class="fa-solid fa-right"></i></h5>
                     <div class="owl-carousel owl-theme">
                         <?php
-                            getProduct();
+                            randomProduct();
                         ?>
                     </div>
                 </div>
