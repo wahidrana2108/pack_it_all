@@ -21,81 +21,82 @@
             <div class="card p-4 ">
                 <h1 class="text-center">Register a new account</h1>
                 <form action="customer_register.php" method="post">
-                    <!-- form Begin -->
 
                     <div class="form-group">
-                        <!-- form-group Begin -->
 
-                        <label>Your Name</label>
+                        <label>Full Name</label>
 
-                        <input type="text" class="form-control" name="name" required>
+                        <input type="text" class="form-control" name="c_name" required>
 
-                    </div><!-- form-group Finish -->
-
-                    <div class="form-group">
-                        <!-- form-group Begin -->
-
-                        <label>Your Email</label>
-
-                        <input type="email" class="form-control" name="email" required>
-
-                    </div><!-- form-group Finish -->
+                    </div>
 
                     <div class="form-group">
-                        <!-- form-group Begin -->
 
-                        <label>Your Password</label>
+                        <label>Email Address</label>
 
-                        <input type="password" class="form-control" name="password" required>
+                        <input type="email" class="form-control" name="c_email" required>
 
-                    </div><!-- form-group Finish -->
-
-                    <div class="form-group">
-                        <!-- form-group Begin -->
-
-                        <label>Your Address</label>
-
-                        <textarea name="Address" class="form-control"></textarea>
-
-                    </div><!-- form-group Finish -->
+                    </div>
 
                     <div class="form-group">
-                        <!-- form-group Begin -->
 
-                        <label>Your City</label>
+                        <label>Choose Password</label>
 
-                        <input type="text" class="form-control" name="city" required>
+                        <input type="password" class="form-control" name="c_password" required>
 
-                    </div><!-- form-group Finish -->
+                    </div>
 
-                    <div class="form-group">
-                        <!-- form-group Begin -->
-
-                        <label>Your Country</label>
-
-                        <input type="text" class="form-control" name="country" required>
-
-                    </div><!-- form-group Finish -->
 
                     <div class="form-group">
-                        <!-- form-group Begin -->
 
-                        <label>Your Name</label>
+                        <label>Select Country</label>
 
-                        <input type="file" class="form-control" name="dp" required>
+                        <input type="text" class="form-control" name="c_country" required>
 
-                    </div><!-- form-group Finish -->
+                    </div>
 
+
+                    <div class="form-group">
+
+                        <label>Select City</label>
+
+                        <input type="text" class="form-control" name="c_city" required>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label>Full Address</label>
+
+                        <textarea name="c_address" class="form-control"></textarea>
+
+                    </div>
+
+                    
+                    <div class="form-group">
+
+                        <label>Your Contract</label>
+
+                        <input type="text" class="form-control" name="c_contract" required>
+
+                    </div>
+
+                    <div class="form-group pt-2">
+
+                        <label>Your Recent Photo</label>
+
+                        <input type="file" class="form-control" name="c_image" required>
+
+                    </div>
 
 
                     <div class="text-center mt-2">
-                        <!-- text-center Begin -->
 
-                        <button type="submit" name="submit" class="btn btn-primary">Register</button>
+                        <button type="submit" name="register" class="btn btn-primary">Register</button>
 
-                    </div><!-- text-center Finish -->
+                    </div>
 
-                </form><!-- form Finish -->
+                </form>
             </div>
         </div>
 
@@ -106,4 +107,20 @@
 
 <?php
     include("includes/footer.php");
+?>
+
+
+<?php
+    if(isset($_POST['register'])){
+        $c_name = $_POST['c_name'];
+        $c_email = $_POST['c_email'];
+        $c_password = $_POST['c_password'];
+        $c_country = $_POST['c_country'];
+        $c_city = $_POST['c_city'];
+        $c_address = $_POST['c_address'];
+        $c_contract = $_POST['c_contract'];
+        $c_image = $FILES['c_image']['name'];
+        $c_image_tmp = $FILES['c_image']['tmp_name'];
+        $c_ip = getRealIpUser();
+    }
 ?>
