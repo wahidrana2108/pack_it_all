@@ -77,3 +77,29 @@ body {
     border-radius: 5px;
     box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
 }
+
+.flow{
+    overflow-y: hidden;
+    width: 100%;
+    
+}
+
+.sDetails{
+    height: auto;
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+.remove a{
+    text-decoration: none;
+    color: rgb(92, 92, 92);
+}
+
+
+.removeBtn a{
+    color: rgb(255, 255, 255);
+}
+
