@@ -78,6 +78,7 @@
         }
       }
       echo $up_cart = update_cart();
+      
     ?>
 
     
