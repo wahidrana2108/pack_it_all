@@ -17,90 +17,85 @@
             </ul>
         </div>
 
+        <div class="col-md-9 m-auto">
+            <div class="card p-4 ">
+                <h1 class="text-center">Register a new account</h1>
+                <form action="customer_register.php" method="post">
+                    <!-- form Begin -->
 
-        <div class="d-flex">
-            <div class="col-md-9">
-                <div class="card p-4 ">
-                    <h1 class="text-center">Register a new account</h1>
-                    <form action="customer_register.php" method="post">
-                        <!-- form Begin -->
+                    <div class="form-group">
+                        <!-- form-group Begin -->
 
-                        <div class="form-group">
-                            <!-- form-group Begin -->
+                        <label>Your Name</label>
 
-                            <label>Your Name</label>
+                        <input type="text" class="form-control" name="name" required>
 
-                            <input type="text" class="form-control" name="name" required>
+                    </div><!-- form-group Finish -->
 
-                        </div><!-- form-group Finish -->
+                    <div class="form-group">
+                        <!-- form-group Begin -->
 
-                        <div class="form-group">
-                            <!-- form-group Begin -->
+                        <label>Your Email</label>
 
-                            <label>Your Email</label>
+                        <input type="email" class="form-control" name="email" required>
 
-                            <input type="email" class="form-control" name="email" required>
+                    </div><!-- form-group Finish -->
 
-                        </div><!-- form-group Finish -->
+                    <div class="form-group">
+                        <!-- form-group Begin -->
 
-                        <div class="form-group">
-                            <!-- form-group Begin -->
+                        <label>Your Password</label>
 
-                            <label>Your Password</label>
+                        <input type="password" class="form-control" name="password" required>
 
-                            <input type="password" class="form-control" name="password" required>
+                    </div><!-- form-group Finish -->
 
-                        </div><!-- form-group Finish -->
+                    <div class="form-group">
+                        <!-- form-group Begin -->
 
-                        <div class="form-group">
-                            <!-- form-group Begin -->
+                        <label>Your Address</label>
 
-                            <label>Your Address</label>
+                        <textarea name="Address" class="form-control"></textarea>
 
-                            <textarea name="Address" class="form-control"></textarea>
+                    </div><!-- form-group Finish -->
 
-                        </div><!-- form-group Finish -->
+                    <div class="form-group">
+                        <!-- form-group Begin -->
 
-                        <div class="form-group">
-                            <!-- form-group Begin -->
+                        <label>Your City</label>
 
-                            <label>Your City</label>
+                        <input type="text" class="form-control" name="city" required>
 
-                            <input type="text" class="form-control" name="city" required>
+                    </div><!-- form-group Finish -->
 
-                        </div><!-- form-group Finish -->
+                    <div class="form-group">
+                        <!-- form-group Begin -->
 
-                        <div class="form-group">
-                            <!-- form-group Begin -->
+                        <label>Your Country</label>
 
-                            <label>Your Country</label>
+                        <input type="text" class="form-control" name="country" required>
 
-                            <input type="text" class="form-control" name="country" required>
+                    </div><!-- form-group Finish -->
 
-                        </div><!-- form-group Finish -->
+                    <div class="form-group">
+                        <!-- form-group Begin -->
 
-                        <div class="form-group">
-                            <!-- form-group Begin -->
+                        <label>Your Name</label>
 
-                            <label>Your Name</label>
+                        <input type="file" class="form-control" name="dp" required>
 
-                            <input type="file" class="form-control" name="dp" required>
-
-                        </div><!-- form-group Finish -->
+                    </div><!-- form-group Finish -->
 
 
 
-                        <div class="text-center mt-2">
-                            <!-- text-center Begin -->
+                    <div class="text-center mt-2">
+                        <!-- text-center Begin -->
 
-                            <button type="submit" name="submit" class="btn btn-primary">Register</button>
+                        <button type="submit" name="submit" class="btn btn-primary">Register</button>
 
-                        </div><!-- text-center Finish -->
+                    </div><!-- text-center Finish -->
 
-                    </form><!-- form Finish -->
-                </div>
-
-
+                </form><!-- form Finish -->
             </div>
         </div>
 

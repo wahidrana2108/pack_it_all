@@ -80,6 +80,32 @@
                         </div><!-- text-center Finish -->
 
                     </form><!-- form Finish -->
+
+                    <?php 
+                       
+                       if(isset($_POST['submit'])){
+                           
+                           /// Admin receives message with this ///                          
+                           $sender_name = $_POST['name'];
+                           $sender_email = $_POST['email'];
+                           $sender_subject = $_POST['subject'];
+                           $sender_message = $_POST['message'];
+                           $receiver_email = "jacquelinechavezkh@gmail.com";
+                           mail($receiver_email,$sender_name,$sender_subject,$sender_message,$sender_email);
+                           
+
+                           /// Auto reply to sender with this ///
+                           
+                           $email = $_POST['email'];
+                           $subject = "Welcome to my website";
+                           $msg = "Thanks for sending us message. ASAP we will reply your message";
+                           $from = "jacquelinechavezkh@gmail.com";
+                           mail($email,$subject,$msg,$from);
+                           echo "<h2 class='text-center text-success m-auto pt-3'> Your message has sent successfully! </h2>";
+                           
+                       }
+                       
+                       ?>
                 </div>
 
 
