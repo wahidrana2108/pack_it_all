@@ -107,16 +107,19 @@
     </div>
   </div>
 </div>
-<div class="mt-3">
-  <a href="index.php" class="btn btn-secondary btn-sm mb-1" role="button"><i
-      class="fa-solid fa-chevron-left me-1"></i>Continue Shopping</a>
-  <div class="btn-group">
-    <a name="update" href="cart.php" class="btn btn-danger btn-sm mb-1" role="button"><i
-        class="fa-solid fa-trash me-1"></i>Remove Item</a>
-    <a href="mDetails.php" class="btn btn-success btn-sm mb-1" role="button"><i
-        class="fa-solid fa-cart-shopping me-1"></i>Checkout</a>
-  </div>
-  <?php        
+<form  action="cart.php" method="post" enctype="multipart/form-data">
+  <div class="mt-3">
+    <a href="index.php" class="btn btn-secondary btn-sm mb-1" role="button"><i
+        class="fa-solid fa-chevron-left me-1"></i>Continue Shopping</a>
+    <div class="btn-group">
+      <a name="update" href="cart.php" class="btn btn-danger btn-sm mb-1" role="button"><i
+          class="fa-solid fa-trash me-1"></i>Remove Item</a>
+      <a href="mDetails.php" class="btn btn-success btn-sm mb-1" role="button"><i
+          class="fa-solid fa-cart-shopping me-1"></i>Checkout</a>
+    </div>
+</form>
+</div>
+<?php        
     function update_cart(){
         global $con;
         if(isset($_POST['update'])){ 
@@ -125,10 +128,15 @@
                 $run_delete = mysqli_query($con,$delete_product);  
                 if($run_delete){ 
                     echo "<script>window.open('cart.php','_self')</script>";                   
+                    echo "<script>alert('Product removed!')</script>";                   
                 }              
             }           
         }  
     }
     echo @$up_cart = update_cart(); 
   ?>
-</div>
+
+
+
+
+
