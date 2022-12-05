@@ -18,11 +18,10 @@
         <div class="col-md-9 m-auto">
             <div class="card p-4 ">
                 <?php
-                include("includes/customer_login.php");
+                    include("includes/customer_login.php");
                 ?>
             </div>
         </div>
-
     </div>
 </div>
 <!-- customer register end -->

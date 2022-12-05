@@ -61,16 +61,16 @@
                         ?>
                 </a> <?php item(); ?> items in Cart | Total Price <span class="text-success"><?php totalPrice(); ?></span></h6>
             </div>
-            <div class="col-sm-12 col-md-5" >
+            <div class="col-sm-12 col-md-5 pt-0" >
                 <ul class="nav justify-content-center">
-                    <li class="nav-item"><a class="nav-link" href="#">My Account</a></li>
-                    <li class="nav-item"><a href="../cart.php" class="nav-link" href="#">Go To Cart</a></li>
+                    <li class="nav-item"><a class="nav-link pt-3" href="#">My Account</a></li>
+                    <li class="nav-item"><a href="../cart.php" class="nav-link pt-3" href="#">Go To Cart</a></li>
                     <li class="nav-item"><a href="../chekout.php" class="nav-link ">
                         <?php                           
                            if(!isset($_SESSION['customer_email'])){                      
-                                echo "<a href='checkout.php' class=''> Login </a>";
+                                echo "<a href='../checkout.php' class='nav-link mt-0 pt-0'> Login </a>";
                                }else{
-                               echo " <a href='logout.php'> Log Out </a> ";
+                               echo " <a href='logout.php' class='nav-link mt-0 pt-0'> Log Out </a> ";
                                }                          
                          ?>
                     </a></li>
@@ -92,8 +92,16 @@
                     <ul class="navbar-nav mb-2 mb-lg-0">
                         <li class="nav-item <?php if($active=='Home') echo"activePage"; ?>"><a class="nav-link active" aria-current="page" href="../index.php">Home</a></li>
                         <li class="nav-item <?php if($active=='Shop') echo"activePage"; ?>"><a class="nav-link active" aria-current="page" href="../shop.php">Shop</a></li>
-                        <li class="nav-item <?php if($active=='My Account') echo"activePage"; ?>"><a class="nav-link active" aria-current="page" href="../customer/myAccount.php">My Account</a></li>
-                        <li class="nav-item <?php if($active=='Shopping Cart') echo"activePage"; ?>"><a class="nav-link active" aria-current="page" href="../cart.php">Shopping Cart</a></li>
+                        <li class="nav-item <?php if($active=='My Account') echo"activePage"; ?>">
+                            <?php
+                                if(!isset($_SESSION['customer_email'])){
+                                    echo "<a href='checkout.php' class='nav-link active'>My Account</a>";
+                                }
+                                else{
+                                    echo "<a href='customer/myAccount.php' class='nav-link active'>My Account</a>";
+                                }
+                            ?>
+                        </li>                        <li class="nav-item <?php if($active=='Shopping Cart') echo"activePage"; ?>"><a class="nav-link active" aria-current="page" href="../cart.php">Shopping Cart</a></li>
                         <li class="nav-item <?php if($active=='Contact Us') echo"activePage"; ?>"><a class="nav-link active" aria-current="page" href="../contact.php">Contact Us</a></li>
                     </ul>
                 </div>

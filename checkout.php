@@ -17,7 +17,6 @@
 
         <div class="col-md-9 m-auto">
             <div class="card p-4 ">
-                <h1 class="text-center">Register a new account</h1>
                 <?php
                     if(!isset($_SESSION['customer_email'])){
                         include("customer/includes/customer_login.php");
