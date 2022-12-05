@@ -15,7 +15,7 @@
                 <h4>User Section</h4>
 
                 <ul>
-                    <li><a href="checkout.php">Login</a></li>
+                    <li><a href="customer_login.php">Login</a></li>
                     <li><a href="customer_register.php">Register</a></li>
                 </ul>
                 <hr class="visually-hidden">

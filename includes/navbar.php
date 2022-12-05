@@ -64,8 +64,8 @@
             </div>
             <div class="col-sm-12 col-md-5" >
                 <ul class="nav justify-content-center">
-                    <li class="nav-item"><a class="nav-link" href="#">My Account</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Go To Cart</a></li>
+                    <li class="nav-item"><a class="nav-link" href="customer/myAccount.php">My Account</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cart.php">Go To Cart</a></li>
                     <li class="nav-item"><a class="nav-link ">
                         <?php                           
                            if(!isset($_SESSION['customer_email'])){                      

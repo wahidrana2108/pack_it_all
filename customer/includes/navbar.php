@@ -52,21 +52,28 @@
         <div class="d-flex tempNavBg row">
             <div class="welcome mt-auto col-sm-12 col-md-7">
                 <h6 class="text-center"> <a class="btn btn-success btn-sm justify-content-left">
-                    <?php
-                        if(isset($_SESSION['customer_email'])){
-                            echo "welcome: Guest";
-                        }
-                        else{
-                            echo "Welcome: " . $_SESSION['customer_email'] . "";
-                        }
-                    ?>
+                    <?php 
+                            if(!isset($_SESSION['customer_email'])){                       
+                                echo "Welcome: Guest";                      
+                            }else{                        
+                                echo "Welcome: " . $_SESSION['customer_email'] . "";                       
+                            }                   
+                        ?>
                 </a> <?php item(); ?> items in Cart | Total Price <span class="text-success"><?php totalPrice(); ?></span></h6>
             </div>
             <div class="col-sm-12 col-md-5" >
                 <ul class="nav justify-content-center">
                     <li class="nav-item"><a class="nav-link" href="#">My Account</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Go To Cart</a></li>
-                    <li class="nav-item"><a class="nav-link ">Login</a></li>
+                    <li class="nav-item"><a href="../cart.php" class="nav-link" href="#">Go To Cart</a></li>
+                    <li class="nav-item"><a href="../chekout.php" class="nav-link ">
+                        <?php                           
+                           if(!isset($_SESSION['customer_email'])){                      
+                                echo "<a href='checkout.php' class=''> Login </a>";
+                               }else{
+                               echo " <a href='logout.php'> Log Out </a> ";
+                               }                          
+                         ?>
+                    </a></li>
                 </ul>
             </div>
             
@@ -99,7 +106,7 @@
                             </form>
                         </li>
                         <li class="nav-item ms-2">
-                            <a class="nav-link active mt-1" aria-current="page" href="cart.php">
+                            <a class="nav-link active mt-1" aria-current="page" href="../cart.php">
                                 <button type="button" class="btn position-relative"> <i class="fa-solid fa-cart-arrow-down"> </i><span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary"> <?php item(); ?> <span class="visually-hidden">Added to cart</span></span></button></a>
                         </li>
                     </ul>
