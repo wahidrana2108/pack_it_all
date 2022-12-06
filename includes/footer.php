@@ -65,9 +65,9 @@
                     <strong>Pack It All</strong>
                     <br />Facebook
                     <br />What's app
-                    <br />01770-888280
+                    <br />+960000000
                     <br />pickitall@suppot.com
-                    <br /><strong>Wahid Rana</strong><br>
+                    <br /><strong>Developer</strong><br>
                     <a href="contact.php" class="fw-bold">More contact info</a>
                 </p>
             </div>
