@@ -114,7 +114,7 @@
     <div class="btn-group">
       <a name="update" href="cart.php" class="btn btn-danger btn-sm mb-1" role="button"><i
           class="fa-solid fa-trash me-1"></i>Remove Item</a>
-      <a href="mDetails.php" class="btn btn-success btn-sm mb-1" role="button"><i
+      <a href="checkout.php" class="btn btn-success btn-sm mb-1" role="button"><i
           class="fa-solid fa-cart-shopping me-1"></i>Checkout</a>
     </div>
 </form>
