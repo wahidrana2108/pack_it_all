@@ -20,7 +20,7 @@
         <td></td>
         <td></td>
         <td></td>
-        <td></td>
+        <td><a class="btn btn-primary" href="confirm.php"><small>Confirm Payment</small></a></td>
       </tr>
     </tbody>
   </table>
