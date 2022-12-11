@@ -25,23 +25,53 @@
         </div>
         <div class="form-group pt-2">
             <label>Amount Sent:</label>
-            <input type="text" class="form-control" name="amount_sent" required>
+            <input type="number" class="form-control" name="amount_sent" required>
         </div>
         <div class="form-group pt-2">
             <label>Select Payment Method:</label>
-            <select class="form-select" aria-label="Default select example" required>
+            <select name="payment_mode" class="form-select" aria-label="Default select example" required>
                 <option selected disabled>Open this select menu</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
+                <option value="b-kash">B-kash</option>
+                <option value="rocket">Rocket</option>
+                <option value="nogod">Nogod</option>
+                <option value="paypal">Paypal</option>
+                <option value="master">Master Card</option>
+                <option value="visa">Visa Card</option>
               </select>
         </div>
         <div class="form-group pt-2">
             <label>Transaction/Reference ID:</label>
-            <input type="number" class="form-control" name="c_address" required>
+            <input type="number" class="form-control" name="ref_no" required>
+        </div>
+        <div class="form-group pt-2">
+            <label>OTP:</label>
+            <input type="number" class="form-control" name="code" required>
+        </div>
+        <div class="form-group pt-2">
+            <label>Transaction/Reference ID:</label>
+            <input type="date" class="form-control" name="date" required>
         </div>
         <div class="text-center mt-2">
             <button type="submit" name="login" value="login" class="btn btn-success"><i class="fa-sharp fa-solid fa-money-bill"></i> Confirm Payment</button>
         </div>
     </form>
+    <?php
+        if(isset($_POST['confirm_payment'])){
+            $update_id = $_GET['update_id'];
+            $invoice_no = $_POST['invoice_no'];
+            $amount = $_POST['amount_sent'];
+            $payment_mode = $_POST['payment_mode'];
+            $ref_no = $_POST['ref_no'];
+            $code = $_POST['code'];
+            $payment_date = $_POST['date'];
+            $complete = "Complete";
+            $insert_payment = "insert into payments (invoice_no,amount,payment_mode,ref_no,code,payment_date) values ('$invoice_no','$amount_sent','$payment_mode','$ref_no','$code','$date')";
+            $run_payment = mysqli_query($con,$insert_payment);
+
+            $update_customer_order = "update customer_order set order_status='complete' where order_id='$update_id'";
+            $run_customer_order = mysqli_query($con,$update_customer_order);
+            $update_pending_order = "update pending_orders set order_status='complete' where order_id='$update_id'";
+            $run_pending_order = mysqli_query($con,$update_pending_order);
+        }
+    ?>
 </div>
