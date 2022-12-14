@@ -12,7 +12,6 @@
       </tr>
     </thead>
     <tbody>
-
       <?php
         $customer_session = $_SESSION['customer_email'];
         $get_customer = "select * from customers where customer_email='$customer_session'";
@@ -31,7 +30,7 @@
           $order_date = substr($row_orders['order_date'],0,11);
           $order_status = $row_orders['order_status'];
           $i++;
-          if($order_status == 'Pending'){
+          if($order_status==='Pending'){
             $order_status = 'Unpaid';
           }
           else{

@@ -18,7 +18,7 @@
 <!-- navbar end -->
 <div class="container col-md-6">
 <h1 class="text-center">Confirm Order</h1>
-    <form action="checkout.php?update='<?php echo $order_id; ?>'" method="post" enctype="multipart/form-data">
+    <form action="confirm.php?update_id=<?php echo $order_id; ?>" method="post" enctype="multipart/form-data">
         <div class="form-group pt-2">
             <label>Invoice No:</label>
             <input type="number" class="form-control" name="invoice_no" required>
@@ -52,7 +52,7 @@
             <input type="date" class="form-control" name="date" required>
         </div>
         <div class="text-center mt-2">
-            <button type="submit" name="login" value="login" class="btn btn-success"><i class="fa-sharp fa-solid fa-money-bill"></i> Confirm Payment</button>
+            <button type="submit" name="confirm_payment" class="btn btn-success"><i class="fa-sharp fa-solid fa-money-bill"></i> Confirm Payment</button>
         </div>
     </form>
     <?php
@@ -65,13 +65,20 @@
             $code = $_POST['code'];
             $payment_date = $_POST['date'];
             $complete = "Complete";
-            $insert_payment = "insert into payments (invoice_no,amount,payment_mode,ref_no,code,payment_date) values ('$invoice_no','$amount_sent','$payment_mode','$ref_no','$code','$date')";
+            $insert_payment = "insert into payments (invoice_no,amount,payment_mode,ref_no,code,payment_date) values ('$invoice_no','$amount','$payment_mode','$ref_no','$code','$date')";
             $run_payment = mysqli_query($con,$insert_payment);
 
-            $update_customer_order = "update customer_order set order_status='complete' where order_id='$update_id'";
+            $update_customer_order = "update customer_order set order_status='$complete' where order_id='$update_id'";
             $run_customer_order = mysqli_query($con,$update_customer_order);
-            $update_pending_order = "update pending_orders set order_status='complete' where order_id='$update_id'";
+            $update_pending_order = "update pending_orders set order_status='$complete' where order_id='$update_id'";
             $run_pending_order = mysqli_query($con,$update_pending_order);
+            
+            if($run_pending_order){
+                echo "<script>alert('Thank you for purchasing, Order will be confirmed with in 24 hours!')</script>";
+                echo "<script>window.open('myAccount.php','_self')</script>";
+            }
         }
     ?>
+
+    
 </div>
