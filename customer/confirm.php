@@ -65,7 +65,7 @@
             $code = $_POST['code'];
             $payment_date = $_POST['date'];
             $complete = "Complete";
-            $insert_payment = "insert into payments (invoice_no,amount,payment_mode,ref_no,code,payment_date) values ('$invoice_no','$amount','$payment_mode','$ref_no','$code','$date')";
+            $insert_payment = "insert into payments (invoice_no,amount,payment_mode,ref_no,code,payment_date) values ('$invoice_no','$amount','$payment_mode','$ref_no','$code','$payment_date')";
             $run_payment = mysqli_query($con,$insert_payment);
 
             $update_customer_order = "update customer_order set order_status='$complete' where order_id='$update_id'";
