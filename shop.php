@@ -27,7 +27,7 @@
             <div class="col-md-10">
                 <?php
                     if(!isset($_GET['p_cat'])){
-                        if(!isset($_GET['p_cat'])){
+                        if(!isset($_GET['cat'])){
                             echo "
                             <div class='sDetails'>
                                 <h1>Shop</h1>

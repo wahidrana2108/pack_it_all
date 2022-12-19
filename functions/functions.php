@@ -150,7 +150,7 @@ function getCat(){
 
         echo "
         <li class='nav-item'>
-            <a class='nav-link active ms-2 me-2 mb-2 ps-3' aria-current='page' href='shop.php?p_cat=$cat_id'>$cat_title</a>
+            <a class='nav-link active ms-2 me-2 mb-2 ps-3' aria-current='page' href='shop.php?cat=$cat_id'>$cat_title</a>
         </li>
         ";
 
@@ -193,9 +193,11 @@ function productCategory(){
         $row_p_cat = mysqli_fetch_array($run_p_cat);
         $p_cat_title = $row_p_cat['p_cat_title'];
         $p_cat_desc = $row_p_cat['p_cat_desc'];
+
         $get_products = "select * from products where p_cat_id='$p_cat_id'";
         $run_products = mysqli_query($db,$get_products);
         $count = mysqli_num_rows($run_products);
+
         if($count==0){
             echo "
             <div class='sDetails'>
@@ -255,6 +257,7 @@ function genderCategory(){
         $get_cats = "select * from products where cat_id='$cat_id'";
         $run_products = mysqli_query($db,$get_cats);
         $count = mysqli_num_rows($run_products);
+        
         if($count==0){
             echo "
             <div class='sDetails'>

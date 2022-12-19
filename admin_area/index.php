@@ -59,7 +59,8 @@
                     <ul class="dropdown-menu">
                       <li><a class="dropdown-item" href="index.php?user_profile"><i class="fa-solid fa-user"></i> Profile</a></li>
                       <li><a class="dropdown-item" href="index.php?view_products"><i class="fa-solid fa-message"></i> Products<span class="badge text-bg-secondary">4</span></a></li>
-                      <li><a class="dropdown-item" href="index.php?view_customers"><i class="fa-solid fa-user-group"></i> Customers<span class="badge text-bg-secondary">4</span></a></li>
+                      <li><a class="dropdown-item" href="index.php
+                        ?view_customers"><i class="fa-solid fa-user-group"></i> Customers<span class="badge text-bg-secondary">4</span></a></li>
                       <li><a class="dropdown-item" href="index.php?view_cats"><i class="fa-solid fa-gear"></i> Product Catagories<span class="badge text-bg-secondary">4</span></a></li>
                       <li><hr class="dropdown-divider"></li>
                       <li><a class="dropdown-item" href="logout.php"><i class="fa-solid fa-power-off"></i> Log Out</a></li>
