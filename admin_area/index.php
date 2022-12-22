@@ -1,10 +1,24 @@
 <?php include('includes/header.php'); ?>
-    <!-- content end -->
+    
     <div class="row">
+        <!-- sidebar start -->
         <div class="col-md-2">
             <?php include('includes/sidenav.php'); ?>
         </div>
+        <!-- sidebar end -->
+
+
+
+        <!-- dashboard start -->
+        <div class="col-md-10">
+            <?php 
+                if(!isset($_GET['dashboard'])){
+                    include("dashboard.php");
+                }
+        ?> 
+        </div>
+        <!-- dashboard end -->
     </div>
-    <!-- content end -->
+    
 
 <?php include('includes/footer.php'); ?>
