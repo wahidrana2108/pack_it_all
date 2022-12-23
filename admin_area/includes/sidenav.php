@@ -5,8 +5,6 @@
     else{
 ?>
 
-
-
 <ul class="navbar-nav navbar-dark bg-dark ps-3 pe-3 vh-100">
     <li class="nav-item "><a class="nav-link active text-light" aria-current="page" href="index.php?dashboard"><i class="fa-solid fa-gauge pe-3"></i> Dashboard</a></li>
     <li class="nav-item dropdown"><a class="nav-link dropdown-toggle active text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-tag pe-3"></i> Products</a>

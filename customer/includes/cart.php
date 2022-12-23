@@ -42,7 +42,6 @@
               $total += $sub_total;
               $tax = ($total*5)/100;
               $final = $total+$tax;
-          
         ?>
 
 

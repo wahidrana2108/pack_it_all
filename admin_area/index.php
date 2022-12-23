@@ -28,12 +28,6 @@
         $get_orders = "select * from pending_orders";
         $run_orders = mysqli_query($con,$get_orders);
         $count_orders = mysqli_num_rows($run_orders);
-
-
-
-
-
-
  ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -73,11 +67,12 @@
                 if(isset($_GET['view_products'])){
                     include("view_products.php");
                 }
+                if(isset($_GET['delete_product'])){
+                    include("delete_product.php");
+                }
         ?> 
         </div>
         <!-- dashboard end -->
     </div>
-    
-
 <?php include('includes/footer.php'); ?>
 <?php } ?>

@@ -42,7 +42,6 @@
 <?php include('includes/footer.php'); ?>
 
 
-
 <?php 
     if(isset($_POST['admin_login'])){
         $admin_email = mysqli_real_escape_string($con,$_POST['admin_email']);
