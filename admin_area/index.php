@@ -53,8 +53,6 @@
         </div>
         <!-- sidebar end -->
 
-
-
         <!-- dashboard start -->
         <div class="col-md-10">
             <?php 
@@ -69,6 +67,18 @@
                 }
                 if(isset($_GET['delete_product'])){
                     include("delete_product.php");
+                }
+                if(isset($_GET['edit_product'])){
+                    include("edit_product.php");
+                }
+                if(isset($_GET['view_customers'])){
+                    include("view_customers.php");
+                }
+                if(isset($_GET['delete_customer'])){
+                    include("delete_customer.php");
+                }
+                if(isset($_GET['view_orders'])){
+                    include("view_orders.php");
                 }
         ?> 
         </div>

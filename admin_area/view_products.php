@@ -42,7 +42,7 @@
 
                     <th scope="row" class="ps-3"><?php echo $pro_id; ?></th>
                     <td><?php echo $pro_title; ?></td>
-                    <td><?php echo $pro_img1; ?></td>
+                    <td><?php echo "<img src='product_images/$pro_img1' height='80px'>"; ?></td>
                     <td>৳<?php echo $pro_price; ?></td>
                     <td>
                         <?php
