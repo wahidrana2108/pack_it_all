@@ -1,9 +1,18 @@
+<?php
+    if(!isset($_SESSION['admin_email'])){
+        echo "<script>window.open('login.php','_self')</script>";
+    }
+    else{
+?>
+
+
+
 <ul class="navbar-nav navbar-dark bg-dark ps-3 pe-3 vh-100">
     <li class="nav-item "><a class="nav-link active text-light" aria-current="page" href="index.php?dashboard"><i class="fa-solid fa-gauge pe-3"></i> Dashboard</a></li>
     <li class="nav-item dropdown"><a class="nav-link dropdown-toggle active text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-tag pe-3"></i> Products</a>
         <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="index.php?insert_product">Insert Product</a></li>
-            <li><a class="dropdown-item" href="index.php?view_product">View Products</a></li>
+            <li><a class="dropdown-item" href="index.php?view_products">View Products</a></li>
         </ul>
     </li>
     <li class="nav-item dropdown"><a class="nav-link dropdown-toggle active text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-pen-to-square pe-3"></i> Products Category</a>
@@ -24,16 +33,17 @@
             <li><a class="dropdown-item" href="index.php?view_slides">View Slides</a></li>
         </ul>
     </li>
-    <li class="nav-item "><a class="nav-link active text-light" aria-current="page" href="index.php?"><i class="fa-solid fa-users pe-3"> </i> View customers</a></li>
-    <li class="nav-item "><a class="nav-link active text-light" aria-current="page" href="index.php?"><i class="fa-solid fa-list pe-3"></i> View Orders</a></li>
-    <li class="nav-item "><a class="nav-link active text-light" aria-current="page" href="index.php?"><i class="fa-solid fa-money-bill pe-3"></i> View Payments</a></li>
+    <li class="nav-item "><a class="nav-link active text-light" aria-current="page" href="index.php?view_customers"><i class="fa-solid fa-users pe-3"> </i> View customers</a></li>
+    <li class="nav-item "><a class="nav-link active text-light" aria-current="page" href="index.php?view_orders"><i class="fa-solid fa-list pe-3"></i> View Orders</a></li>
+    <li class="nav-item "><a class="nav-link active text-light" aria-current="page" href="index.php?view_payments"><i class="fa-solid fa-money-bill pe-3"></i> View Payments</a></li>
     <li class="nav-item dropdown"><a class="nav-link dropdown-toggle active text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-users pe-3"></i> Users</a>
         <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="index.php?insert_user">Insert User</a></li>
             <li><a class="dropdown-item" href="index.php?view_users">View Users</a></li>
-            <li><a class="dropdown-item" href="index.php?edit_user">Edit User Profile</a></li>
+            <li><a class="dropdown-item" href="index.php?edit_user_profile=<?php echo $admin_id; ?>">Edit User Profile</a></li>
         </ul>
     </li>
     <li class="nav-item mb-5"><a class="nav-link active text-light" aria-current="page" href="logout.php"><i class="fa-solid fa-power-off pe-3"></i> Log Out</a></li>
-
 </ul>
+
+<?php } ?>

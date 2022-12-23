@@ -112,7 +112,7 @@
     <a href="index.php" class="btn btn-secondary btn-sm mb-1" role="button"><i
         class="fa-solid fa-chevron-left me-1"></i>Continue Shopping</a>
     <div class="btn-group">
-      <a name="update" href="cart.php" class="btn btn-danger btn-sm mb-1" role="button"><i
+      <a name="remove" href="cart.php" class="btn btn-danger btn-sm mb-1" role="button"><i
           class="fa-solid fa-trash me-1"></i>Remove Item</a>
       <a href="mDetails.php" class="btn btn-success btn-sm mb-1" role="button"><i
           class="fa-solid fa-cart-shopping me-1"></i>Checkout</a>

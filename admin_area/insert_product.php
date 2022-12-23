@@ -1,7 +1,9 @@
 <?php
-include("includes/db.php")
+    if(!isset($_SESSION['admin_email'])){
+        echo "<script>window.open('login.php','_self')</script>";
+    }
+    else{
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -131,7 +133,8 @@ if(isset($_POST['submit'])){
 
     if($run_product){
         echo "<script>alert('Product has been added Successfully!')</script>";
-        echo "<script>window.open('insert_product.php','_self')</script>";
+        echo "<script>window.open('index.php?insert_product','_self')</script>";
     }
 }
 ?>
+<?php } ?>
