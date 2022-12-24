@@ -6,7 +6,7 @@
 ?>
   <!-- new order list start -->
   <div class="card border-primary mt-5 col-md-10">
-    <h5 class="card-header text-center text-light"  style="background-color: rgb(82, 127, 250);"><i class="fa-solid fa-list pe-3"></i></i>Products</h5>
+    <h5 class="card-header text-center text-light"  style="background-color: rgb(82, 127, 250);"><i class="fa-solid fa-list pe-3"></i></i>Gender Category</h5>
     <div class="card-body">
         <table class="table table-striped table-hover">
             <thead>

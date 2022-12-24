@@ -86,11 +86,23 @@
                 if(isset($_GET['delete_category'])){
                     include("delete_category.php");
                 }
+                if(isset($_GET['insert_product_category'])){
+                    include("insert_product_category.php");
+                }
+                if(isset($_GET['view_product_categories'])){
+                    include("view_product_categories.php");
+                }
+                if(isset($_GET['delete_product_category'])){
+                    include("delete_product_category.php");
+                }
                 if(isset($_GET['view_orders'])){
                     include("view_orders.php");
                 }
                 if(isset($_GET['delete_order'])){
                     include("delete_order.php");
+                }
+                if(isset($_GET['view_payments'])){
+                    include("view_payments.php");
                 }
         ?> 
         </div>
