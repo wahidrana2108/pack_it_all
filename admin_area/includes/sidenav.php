@@ -34,6 +34,7 @@
     <li class="nav-item "><a class="nav-link active text-light" aria-current="page" href="index.php?view_customers"><i class="fa-solid fa-users pe-3"> </i> View customers</a></li>
     <li class="nav-item "><a class="nav-link active text-light" aria-current="page" href="index.php?view_orders"><i class="fa-solid fa-list pe-3"></i> View Orders</a></li>
     <li class="nav-item "><a class="nav-link active text-light" aria-current="page" href="index.php?view_payments"><i class="fa-solid fa-money-bill pe-3"></i> View Payments</a></li>
+    <li class="nav-item "><a class="nav-link active text-light" aria-current="page" href="index.php?view_delivered_product"><i class="fa-solid fa-truck pe-3"></i> View Delivered Products</a></li>
     <li class="nav-item dropdown"><a class="nav-link dropdown-toggle active text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-users pe-3"></i> Users</a>
         <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="index.php?insert_user">Insert User</a></li>

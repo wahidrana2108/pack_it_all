@@ -104,6 +104,9 @@
                 if(isset($_GET['view_payments'])){
                     include("view_payments.php");
                 }
+                if(isset($_GET['view_delivered_product'])){
+                    include("view_delivered_product.php");
+                }
         ?> 
         </div>
         <!-- dashboard end -->

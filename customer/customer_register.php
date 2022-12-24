@@ -75,7 +75,7 @@
 
                         <label>Your Contract</label>
 
-                        <input type="text" class="form-control" name="c_contact" required>
+                        <input type="number" class="form-control" name="c_contact" required>
 
                     </div>
 
