@@ -14,6 +14,7 @@
                     <th scope="col">Order ID</th>
                     <th scope="col">Invoice No</th>
                     <th scope="col">Customer Name</th>
+                    <th scope="col">Contact No</th>
                     <th scope="col">Customer Email</th>
                     <th scope="col"> Delivery Address</th>
                     <th scope="col">Total Amount</th>
@@ -51,17 +52,19 @@
                         $customer_city = $row_customer['customer_city'];
                         $customer_country = $row_customer['customer_country'];
                         $customer_email = $row_customer['customer_email'];
+                        $customer_contact = $row_customer['customer_contact'];
 
                         echo"
                         <td>$customer_title</td>
+                        <td>$customer_contact</td>
                         <td>$customer_email</td>
                         <td>$customer_address ,$customer_city, $customer_country</td>
-                        <td class='text-danger'>Workinh on it</td>
+                        <td class='text-danger'>Working on it</td>
                         <td>$order_status</td>
                         ";                       
                     ?>
                     <td><a href="index.php?edit_order=<?php echo $order_id; ?>" class="btn btn-primary"><i class="fa-solid fa-pen-to-square"></i> Edit</a></td>
-                    <td><a href="index.php?deleteorder=<?php echo $order_id; ?>" class="btn btn-danger"><i class="fa-solid fa-trash"></i> Delete</a></td>
+                    <td><a href="index.php?delete_order=<?php echo $order_id; ?>" class="btn btn-danger"><i class="fa-solid fa-trash"></i> Delete</a></td>
                 </tr>
                 <?php } ?>
             </tbody>
