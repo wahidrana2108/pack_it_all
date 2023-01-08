@@ -16,7 +16,7 @@
                     <li>
                         <?php
                             if(!isset($_SESSION['customer_email'])){
-                                echo "<a href='checkout.php' class='nav-link'>Login</a>";
+                                echo "<a href='login.php' class='nav-link'>Login</a>";
                             }
                             else{
                                 echo "<a href='customer/myAccount.php' class='nav-link'>My Account</a>";

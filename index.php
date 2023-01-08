@@ -159,7 +159,7 @@
 <!-- greeting customer end -->
 
 
-<!-- products with own carosel start -->
+<!-- products with own carousel start -->
 <div class="container mt-5">
     <h3 class="text-center">Our Latest Collections</h3>
 
