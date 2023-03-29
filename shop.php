@@ -73,7 +73,7 @@
 
     </div>
 </div>
-<!-- product end -->
+<!-- product end  -->
 
 
 <?php
