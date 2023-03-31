@@ -86,6 +86,10 @@
                 <input name="product_img3" type="file" class="form-control" id="" aria-describedby="">
             </div>
             <div class="form-floating mb-3">
+                <input name="product_stock" type="number" class="form-control" id="" placeholder="Enter stock count" required>
+                <label for="">Enter stock count</label>
+            </div>
+            <div class="form-floating mb-3">
                 <input name="product_price" type="number" class="form-control" id="" placeholder="Enter Product Price" required>
                 <label for="">Enter Price</label>
             </div>
@@ -114,6 +118,7 @@ if(isset($_POST['submit'])){
     $product_price = $_POST['product_price'];
     $product_keyword = $_POST['product_keyword'];
     $product_desc = $_POST['product_desc'];
+    $product_stock = $_POST['product_stock'];
 
     $product_img1 = $_FILES['product_img1']['name'];
     $product_img2 = $_FILES['product_img2']['name'];
@@ -127,7 +132,7 @@ if(isset($_POST['submit'])){
     move_uploaded_file($temp_name2,"product_images/$product_img2");
     move_uploaded_file($temp_name3,"product_images/$product_img3");
 
-    $insert_product =  "insert into products (cat_id,p_cat_id,date,product_title,product_img1,product_img2,product_img3,product_price,product_keyword,product_desc) values ('$cat','$product_cat',NOW(),'$product_title','$product_img1','$product_img2','$product_img3','$product_price','$product_keyword','$product_desc')";
+    $insert_product =  "insert into products (cat_id,p_cat_id,date,product_title,product_img1,product_img2,product_img3,product_stock,product_price,product_keyword,product_desc) values ('$cat','$product_cat',NOW(),'$product_title','$product_img1','$product_img2','$product_img3','$product_stock','$product_price','$product_keyword','$product_desc')";
 
     $run_product = mysqli_query($con,$insert_product);
 
