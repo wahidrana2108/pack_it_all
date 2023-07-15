@@ -46,17 +46,18 @@
         ?>
 
 
-          <tr>
+          <tr class="">
             <td><a href='details.php?pro_id=<?php echo $pro_id; ?>'><img style="width: 60px;" src="admin_area/product_images/<?php echo $product_img1; ?>" alt="..."><br></a> <?php echo $product_title; ?>
             </td>
             <td>
-              <h6>
-                <?php echo $pro_qty; ?>
+              <h4 class="text-center">
+                <button class="btn btn-outline-dark" id="plus">+</button>
+                <span id="quantity"><?php echo $pro_qty; ?></span>
+                <button class="btn btn-outline-dark" id="minus">-</button>
               </h6>
             </td>
             <td>
-              <h6>৳
-                <?php echo $unit_price; ?>
+              <h6>৳ <?php echo $unit_price; ?>
               </h6>
             </td>
             <td>
@@ -78,9 +79,6 @@
       </div>
   </form>
   
-
-
-
 
 
 
@@ -136,7 +134,3 @@
   }
   echo @$up_cart = updated_cart();
 ?>
-
-
-
-
