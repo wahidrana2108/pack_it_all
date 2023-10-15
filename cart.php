@@ -6,8 +6,6 @@
 <!-- navbar end -->
 
 
-
-
 <!-- product start -->
 <div id="content" class="mt-3">
     <div class="container">

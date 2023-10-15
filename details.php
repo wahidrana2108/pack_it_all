@@ -89,9 +89,9 @@
                                             <option>Extra large</option>
                                         </select>
                                     </div>
-                                    <div class='fw-bolder text-success mb-1'>৳ <?php echo $pro_price; ?></div>
-                                    <button type="submit" class="btn btn-sm btn-success"><i
-                                            class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
+                                    <div class='fw-bolder text-success mb-1'>Price: ৳ <?php echo $pro_price; ?></div>
+                                    <div class='fw-bolder text-success mb-1'>Available stock: <?php echo $pro_stock; ?></div>
+                                    <button type="submit" class="btn btn-sm btn-success <?php if($pro_stock <= 0){echo"disabled";}?>"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
                                 </fieldset>
                             </form>
                         </div>
@@ -123,3 +123,4 @@
 <?php
     include("includes/footer.php");
 ?>
+
