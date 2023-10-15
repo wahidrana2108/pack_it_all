@@ -1,4 +1,5 @@
 <?php
+    add_cart();
     if(!isset($_GET['p_cat'])){
         if(!isset($_GET['cat'])){
 
@@ -30,7 +31,7 @@
                             <h5 class='card-title fw-bolder text-primary'><a href='details.php?pro_id=$pro_id'> $pro_title </a></h5>
                             <h6 class='card-text'><a href='details.php?pro_id=$pro_id'><span class='fw-bolder'>৳</span> $pro_price </a></h6>
                             <button class='btn btn-secondary btn-sm mb-1 removeBtn'><a href='details.php?pro_id=$pro_id'><i class='fa-solid fa-circle-info me-1'></i> Details</a></button>
-                            <button class='btn btn-success btn-sm removeBtn'><a href='details.php?pro_id=$pro_id'><i class='fa-solid fa-cart-arrow-down me-1'> </i> Add to Cart </a>
+                            <button class='btn btn-success btn-sm removeBtn'><a href='details.php?add_cart=$pro_id'><i class='fa-solid fa-cart-arrow-down me-1'> </i> Add to Cart </a>
                             </button>
                         </div>
                     </div>

@@ -108,6 +108,14 @@
 ?>
 
 <?php
+    use PHPMailer\PHPMailer\PHPMailer;
+    use PHPMailer\PHPMailer\SMTP;
+    use PHPMailer\PHPMailer\Exception;
+
+    require 'vendor/autoload.php';
+
+    $mail = new PHPMailer(true);
+
     if(isset($_POST['register'])){
         $c_name = $_POST['c_name'];
         $c_email = $_POST['c_email'];
@@ -122,7 +130,13 @@
 
         move_uploaded_file($c_image_tmp,"customer_images/$c_image");
 
-        $insert_customer = "insert into customers (customer_name,customer_email,customer_pass,customer_country,customer_city,customer_address,customer_contact,customer_image,customer_ip) values ('$c_name','$c_email','$c_pass','$c_country','$c_city','$c_address','$c_contact','$c_image','$c_ip')";
+        function getToken($len=32){
+            return substr(md5(openssl_random_pseudo_bytes(20)), -$len);
+        }
+
+        $token = getToken(10);
+
+        $insert_customer = "insert into customers (customer_name,customer_email,customer_pass,customer_country,customer_city,customer_address,customer_contact,customer_image,otp,customer_ip) values ('$c_name','$c_email','$c_pass','$c_country','$c_city','$c_address','$c_contact','$c_image','$token','$c_ip')";
 
 
         $run_customer = mysqli_query($con,$insert_customer);
@@ -136,6 +150,37 @@
             echo "<script>window.open('../index.php','_self')</script>";
         }
         else{
+
+            try {
+        
+                $send_to = $_POST['c_email'];
+    
+                $mail->isSMTP();                                            
+                $mail->Host       = 'smtp.gmail.com';                     
+                $mail->SMTPAuth   = true;                                   
+                $mail->Username   = 'jacquelinechavezkh@gmail.com';                     
+                $mail->Password   = 'kfqi dnrh wzay tzra';                               
+                $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            
+                $mail->Port       = 465;                                    
+              
+    
+                $mail->setFrom('jacquelinechavezkh@gmail.com', 'Email Confirmation');
+                $mail->addAddress($send_to);     
+              
+              
+    
+                $mail->isHTML(true);                                  
+                $mail->Subject = 'Account Activation';
+                $mail->Body    = 'click the link to activate you account. <a href="http://localhost/pack_it_all/customera/verification.php?email=' . $send_to . '&token=' . $token . '"> Click here</a>';
+              
+                $mail->send();
+                $output =  'Message has been sent';
+            } 
+            catch (Exception $e) {
+                $output =  "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+            }
+
+
             $_SESSION['customer_email']=$c_email;
             echo "<script>alert('You have been Registered successfully!')</script>";
             echo "<script>window.open('../index.php','_self')</script>";
