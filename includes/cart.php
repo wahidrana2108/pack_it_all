@@ -54,7 +54,7 @@
                 <button class="btn btn-outline-dark" id="plus">+</button>
                 <span id="quantity"><?php echo $pro_qty; ?></span>
                 <button class="btn btn-outline-dark" id="minus">-</button>
-              </h6>
+              </h4>
             </td>
             <td>
               <h6>৳ <?php echo $unit_price; ?>
@@ -75,14 +75,23 @@
           </tr>
           <?php }} ?>
         </table>
+        <a href="index.php" class="btn btn-secondary btn-sm mb-1" role="button"><i class="fa-solid fa-chevron-left me-1"></i>Continue Shopping</a>
+        <div class="btn-group">
+          <button type="submit" name="update" class="btn btn-danger btn-sm mb-1"><i class="fa-solid fa-trash me-1"></i>Remove Item</button>
+          <a href="checkout.php" class="btn btn-success btn-sm mb-1" role="button"><i class="fa-solid fa-cart-shopping me-1"></i>Checkout</a>
+        </div>
+        
 
+            <div class="mt-3">
       </div>
   </form>
   
 
 
 
-  <div class="col-sm-6 col-md-3">
+
+</div>  
+<div class="col-sm-6 col-md-3">
     <div class="card">
       <div class="card-body">
         <div style="background-color: rgb(224, 224, 224);">
@@ -104,18 +113,6 @@
       </div>
     </div>
   </div>
-</div>
-<form  action="cart.php" method="post" enctype="multipart/form-data">
-  <div class="mt-3">
-    <a href="index.php" class="btn btn-secondary btn-sm mb-1" role="button"><i
-        class="fa-solid fa-chevron-left me-1"></i>Continue Shopping</a>
-    <div class="btn-group">
-      <a name="update" href="cart.php" class="btn btn-danger btn-sm mb-1" role="button"><i
-          class="fa-solid fa-trash me-1"></i>Remove Item</a>
-      <a href="checkout.php" class="btn btn-success btn-sm mb-1" role="button"><i
-          class="fa-solid fa-cart-shopping me-1"></i>Checkout</a>
-    </div>
-</form>
 </div>
 
 <?php

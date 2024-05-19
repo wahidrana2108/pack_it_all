@@ -55,10 +55,15 @@
                 <h6 class="text-center"> 
                     <a class="btn btn-success btn-sm justify-content-left">
                         <?php 
+                            $email = $_SESSION['customer_email'];
+                            $get_customer = "select customer_name from customers where customer_email='$email'";
+                            $run_customer = mysqli_query($con, $get_customer);
+                            $row_customer = mysqli_fetch_array($run_customer);
+                            $customer_name = $row_customer['customer_name'];
                             if(!isset($_SESSION['customer_email'])){                       
                                 echo "Welcome: Guest";                      
                             }else{                        
-                                echo "Welcome: " . $_SESSION['customer_email'] . "";                       
+                                echo "Welcome: " . $customer_name . "";                       
                             }                   
                         ?>
                     </a> <?php item(); ?> items in Cart | Total Price <span class="text-success"><?php totalPrice(); ?></span></h6>
